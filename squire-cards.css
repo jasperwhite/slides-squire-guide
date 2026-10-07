@@ -1,0 +1,516 @@
+@font-face{font-family:"UnifrakturCook";font-weight:700;font-display:block;src:url(data:font/woff2;base64,d09GMgABAAAAADbMABEAAAAAZDgAADZuB9sAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGhwbggYcGgZgAGwIBAmFZhEICoGoKIGIWAE2AiQDhjALgxoABCAFiQIHIAwHG6RRsyLYOACASK+GKEoGJZz8FwmG3p8p2CKX5LgFwXG7BYs66N538kTn74SWWHF/PHr3JX0d4QiNfZI7PD+33l+zDRhsRG9kDkbUYIMxegUjRtSIUa1ESUmWiiCCkgYqIGhjFcZ5emJeYMWpVzYX2d8zi6m1wUpKBoJorX9ruqdn3xeOgnA6cQSk2MUSuLj4CBcVoUg4AqGBt32/tcxcObNbIg2k+6oMEOl2zM+eS84WAIRpbSsk8U85tR81N6nZT3ZcooQXmGfeU6xuE0PqRXCqi6b5KHVvAWo5KRG9mXHspTiFT6edf53p+mUIoB1kH2zBuYzLQCNa37pI+t+okCzfccAQsh2ygoaAr+xLCdh2yAchh7AuIu04dereYevrNhJMgGPXqdvcYaKHbRELo5GbODHet42chndujBzyKaYvh2sk7V7G5ot3Y2JQOU0FIADgCYBhzYFPgpxyCeSeGSxNpqAXn85NBxgIAIBLhvDC89m4FiAkYdgiixFs7H3FJgjAIxIvRa5KO7TrNWzCtENWnAEh0GXMhAVLVmxQOXDC5I3FXwABCK2jwei0PdDtHQBi2rMAKtGsgzRZ24ThFkt1p6S1HwiVdFQ16tyBIY5NABDnMGf2fpv/vmpxrOaBBf5ssLIIesOhGAQwEnEEHUxETUXKbccbAZ5fYgmSIjFAStjAwNBwGEL4jwoIMgviAGdrY1z/PweoDuGYysYAunI8b0dWTlowS2IMtZQIodMujwAOZrvPftdIZFWyJlmfov37txl0l69nEcnKZHX8qdC/9lqv/jzz5MCTqSd7/9wPIGPGOJ6ZnwGmty4CzF0PzUHQzocXod81i4Bx+jEY8CefMFsEHc4iM5MZs1D0gQl2ODRdcnYRA344y2sWrncDJ1RHSG5g/ub4BnIni2PiZxF6i+RphIQGoQV5Fveh5KF/3kOU2auEasuiBKHQ0WwRgkqKMDY8jB3IKSTSFDKwPy/yyMOtFCb17woNDp0tZ6i9EIYhVKNQyMzZ1aBDsGqmCIVOA4otqTO2JSvzJtAm1CVBiyFi7k2Me+hM+GEDkq1DmX09dVVrOFc42LlFq42VHUDu3m4RKQ/Xu35uV37XeqackNpK9V6dYwnVKEKG2SKpw63cUCbDUEcStwR2ty8FR+ClOCC9xC9nmeUuuywIhJyE8FGVry2ZKAYQqH8zxmUvM0EfC7i8jNLbZfQ+KQP9UwZ2HQ0Y1rBAkCcihJoIUH4w2wAPgTPK0DgdTCFUgAE+oGxvWtpNQWk4DbTLD8WugfdvPnKIJqNpKIPhEwQjITk9CYHhHlcHTeOwhSJayk6LboDcCEiGxWg+EGi/IDgBKcHxJh32jRMxIGUl2ChtlG5yw52JEEkt6QCVVv1urhtktmONlwAU0BiE9N11mAOZYSFkREtRJxaDTp/0zM/JG1nSJSMH03RebOq6xfXhXfUpSGUlZkRWFqzwqhqQV33SJQs0NW84WTN5ntaEZJppXTC6WSvZF/zPIQFYFLOlmwBsdBT1nMtwRAQrpxqUltDtYO/Xe8hKKxBlzkrTzZkOpOuoQl3VAdSG6RkXU4YkI8qB506eoJGy7Fi0BSiIuZEAlmdETamFR8zO+iiqkbNVZjk0M1OKtgBA2QILBnDa/piprF9wWJDL846ibywBLLjpQkQF/o1r99szZbfTXbXf6VF02B3sfL4Qg7b1BAVX9w7FhVIMvCu8szPG2L3cBVTKMSOv7euuAq0tMbgfLU/Pz8JfHz15eQbPA+FTugP3BOJy87X7JWhb28O7a8Lvcbz1xfKdNprLbwwK4kpwDfseo0WgLcHDT2uwXkNMJDIOqFwNxBB8NRQ973LjcUveGg73TNgwg6EEcRJu5Czt554lt/DXEUG2PqaT+hffUyMseZSFkmdksdiSE63ayykleOZuaufPlYBtWekrxxzvNiyB3NzKCT1XttpMAMBZIuuNH2770CeuQ07cGMzAjRtaL6bJ4WP+o1/Dyejdm+OSLIXv3fobUiBGHHvcSCja6uepFYZGpgPSIHK1ra3GIE/mcl24J5i4Vb1KxLW87dhNBh5xET1ssMsffaP2mx/SkJ1HxMXIyPdKMerwBRLDu6oIORtHxQ9SQq7ADbqgBLUaTPuZG66KWkqeqny6zVeFQOy/c2uBRE0jVOKig61+T+ELKvCMSQX+6BS+Va5I31Qqsl4EolD4Gz6EDCrDLxWtf0nBLbhNkaX/edKX7KaxWqknDwZNTEMbSzDvCWuuXPSb5GSDGtbJ+80HnXv2BHElhqLE8z3yOZ1cfVlWaei2tak3qFYZMCVs1aClMSaqHx2X3NI6ZELBnX6buqwvIi+jWBKqi68TbPlBZNu474Yh3cMG/svljkbIHPTAD+cfvoXcfMx1ReS4hpIlkzTklOijwVQH9Vf9EAYGEktnE4VamveNY2ILrxaxNjJ3G6nf07ZyWijpRe6v3f/+u2v2xMjOgO4w5v/i1EJKR3h88lLEHssJQn62hPfoxFhmNLWBmnoZDT5XCw7Git42+b7HTKnUASal5XQNRNz/RqWI8zdBhdZyGj3zhQb3I2OJhl0hd/mor4EWilYlVIRuuUyjYtEXnxID/zKulJ6RIAlxjld7fPRm85fltL+FAqXEsK1cCV5iLSn6XAPxSoqe+VxV2sNu+VZFUHnUHXiGKJiqPoukLhZhDBsk2qbDNQz8k32ZgPSIIFcnDaqbvhKF1t9Lpt/OqNSnFMy8bt7XrlJTqLeJMThgidbZ7egthc4JxFAyllGi9ZTW4ZUg7mZUMxUEL1dfahgTeY1cxfnGqkfcwb1KCbcMpb/5dI8aYeApAVR5yFkoNGIjdREMUtjDRRgcrTRffqJ+RGIQCXshu08/pkdcyy4cKNZRDZ6y9TffeGpUdHKuTQlHROtHxItJTkRPKMfQ1Wnza4VY57a2Ceog2cAnToEiIme00px9lCO26jIYXCmtXPTXzZiJ6i9+CHL2qkf44KqCKZfNNy4W09NELGo5ebtBNZV4Z7Lfflop0Ykcct3AQm4xgtUtK2SOpLafn47e22ywRdsa28Mn3mFQJq5K3aYx607EEaSNLp4/Tp/4YfP0SIoK9Jud+W/S3G4bESQPQsLgSvjWWDSdHRqHiSPNxgOUHclz+jUcFb3LJmRujsOU6JRW91IuumGCQ+OeCjwVFX2P4//5gyGnRVCeT5WEx7EKgXO22tNKeJH/jSu/oAQxAxlaxORdLIlPDUWvu76K8MmN4AllW18gBjNLo2nOQgWcWs9UOV2WDFGilDNC5ZV1EL1s3r8uNXSb4iJCW1tM7pKt3Bv9EcUot524elH8//fALQtEQyhJX2dwlrG1llpS7D1z9lViUJlrBywJtaLpgJ5W0E95xCJGb/Ed4R8InlQiJ6IKdbrBpps8T1rimYrC4461bQr54oANjBrL88Sl07wMxsj75mmZWPp+Zqd6kJhYHLYZHGlWDLcLC+YqkSEv+akKKgclu36P5wb5Ky59khBo2KRtvjN3xrOy3uSkMebpvepRJVwNB+hAXfx+sxJ7HyS+SUMR7jK9/V0IOuRPGShY5lEvlbpoSaLFu3bobDWS8QHpJ04+RiKbjYUCchS2VTzZYCmjIaepzKk8izSuy7QrfDoNvQz80ArSiY0RsB3tzmPOsr3q1IATfLCnEAesoBAJSDxzvLnL2xxrFVCn3cOUEegApeKgGMDUcC5F2IWm6jlcoCc0HMaktCRDjGC08eiDWBGm38M3iXNUQom+oC6b3m6sIdnmLldRwhh9V/1NtlwhJe1x5pe0DuuutNEPOoZDe30NmZsfkDYhMDP2j6SVTopLTKG+SJsOyFgVPiF7VEVRIJrnkTyCOK6XxxquPZ6uNc9snOkABnH68NBD5tcO0KCk3BEiXcF6dvOyOp1bRDHfachGYl4Smu+6drD6G3pHZ4o2vUXq5zJUYNQdNYwVTEU67QZrfRSDAsjdeNCFOPoleKkvLhRQwV3nMhF+Jr8igwM9uxtXAkcRw93ZPcHGBYOMfLeG2vBAFdUxxaEtgYe2n2CRcN9xmaq+DArfWaTP0P+19w0fGjE4Z9Nr7tKZAVLE31tvrG7/iZj7UeoGFKhfmFIeeMpZRoHeLWx4OnWFz2X93l7SVt8G31kIqATv8BOkNkobTC5RL1RYM721vGbiGiNLgKsk6rCXIYfr3rK61/AXKey8Q0xrbeuK+izefbbLMfTkF9qcHzZ81FaiD3xghm8SrRKGywminlhPXmrA9qUrrW5517p1j12Y4i5TmaxRc4K48TSs0/YD6fAG/TV6ojiNZGZRBsjKOTDF7fVx3tI32WuoUBhcYCx3DTzXB3vR3aCrFHvytCJL0DTvjR7XUskw6IwpCU7YddwA5xrWTUvKaSv2xepuS2pPN262snbuPv6wcTQ3/s5VO+bseGTNhHG3eQef3MhSe/G++q4hx1/8U5jn4HSusllPWU564mdnT5X1OLyxOrH6/oqRuw0O17B7j+7uqkndVmVWxV3djzndNS/ZdiBcu6lH907cylJrfctNa2JVX3zv2S4GXXomcWDGYkYgs11SL6u6fcS5UBLrXBPrtFkndcvJ27EnsX+oy2lqVeI7VtuzPjFQ/WAXA2+DzTo8PNxdcw4wtMDtYUDRnvVx4cg3Bof2VhPNYewu6/ZmyxN1P/cYDO9aHWlXvAWF9u4NBP3Gj1ZMcKA3YgHeD/jDvCDGO62WcRH8qJOlWyZETzNz74niwkRiUXRXjF8VfdnINF63BPaFVHHRwcp3+mwXEw96xpKHul8LeyxfRRNch6IOFlOUYt75LGkxdl3jg5PNqSICymshMbgcFKMMsTZxFC0KlVJFKqDgovWpY2UtM8noRzeTa+u1rDeNtlGkLk/ebgn4HjCAd0X5IcMdVX/UMUzgDKqDYPSc3MAD0yUl3J3A8WLYu4JhiJRQgAEDDv4sLqZic00olwA/k7owgwdH6znsoToN62eDtASPMMLyxuq3K4ZzoTr2HlK1VBK7iItC2aMsXMx7s/MKSf+KbTXrbJ4csFxbBcDtUOsVkzbZ3BHsdPplBm23lSPDNrv4mb+Rgbd269aNUUuj0PMF1+FXEGBiiXKUFbJ8itLuo6zYlSzjgSUuqUrRsVVKPXqAntDSOKYY3FMwSS1Q+EnSxB82z8c+1kbPH5ZPzcAc7WNLjvzWH5nwMa7E5yYkGKwMx8l+E78uiB84r96rq4cYgXqCh0QTBsNpS6D/hM1vwIopttXO3Prb7UpzzDpest/pfDnau2ywz8n2nv7+JetRvPG1y6j6pGKExRod62RPXwsoH3T9F8t6eQz9u2w+5UR/VcJmqoJrXxFkVbcNonL/4DtOtxXxAqxad190bOouhXMaokyFAMy6h3nivsGz7z4WgjrXrtdegm6f5DT6Ir1q15Z/8MrGtcvhhVx++mUOQwmu/ATJkAf/HAPyypfPByMDvjizrNYEUpvOr0Vg7S94yy8w0PgJJEcWlShESLlZDf2y6SIbrvnmtmP3A+jKXqrJk6BbohW0AutgSlscXxbM9AXxsq1ziM8PyPZT1Hg8X1TwZ4UMVw6r56WoPYbIfJizD2lrbPxtsAkp2MFgUsoZ1DVhffRowqkfKl3Sq58HSIMXqIsf4Lhn0JAGsqMi3BUbVPnKF2gjUdgoX4FLbwhbsAaZUw8hQSe3tXxiL6fRl1pOTxG1zzUDNqEaa8HwiaJBesaYzxAPdCV62EctW4hBw4M0s8AtEEOXStCujp4/PonreRCW81mGAj/Ot2kLfgaYrB4CihVwd+C+06NEMWNU4Ha3hmLS3M4Uv2P1bH7rDtuec1V66So7EZ8ETfAhmEPBFNPZN/ulMVoPue8pgxdtCwTxpPgChkShA0uWqCPN0A4eXfbplzZM2MpeQXA1joGykanrgCVpz34KjZe8LspoRlcI5pRwaSlwmDfnh6LG1tnTSU+JZnH4Bnc+aXGq8PRxwNnasNuq9IdQYMdKYMRu5Nwn5qySE3PHdGgegj6L4FE2OByLrOJrgqP1V3NRsLAF3hFQf/DBT3xOmQE/vzaEJ6VBgZI2DyMEKi0KWmUXMozXvj0PT9+VOfgs8gfuN4OWPWN/Awcu3nE42o4MuUJGdUNyjWnPRuRHb5ANlDEEs/ZtXVjHqQZw8VB4bEjWoG0L8nd2VUJSthNQC2oPoPP+jKa4whVRliujICxdecnzx631zU/Uz66mhKkpPcbtG5/+mIUobsgfQuNlYiDP9OKJNKUzuNNYd1cfNY3ioiDOAwYfLXdB/dCaYMb7Im35MRgwVv+hcBVXAT8YtOeyJ31L7eJZZytHFSE/91Iz8asRds5vnOdhNPLm3osXLi7nB3vsEk61FBj81cIuZd1nQHa0KHyg0UvR7+OwJn1TS9M2fFeNt7LfpyG5xVajmO3g9glTSU7mDhlvwp+SLV9TuLAiW3nS0D8Ts4/q+2dj2Eu4ymuKF67Iliv6HMpfNQvA6PR730qJ3H8e9onX/pnpOp4vtMsaTd+oLbCKUAo+Hby3ZU85cWoHs/xIuTk/QxjmFROYlSLmWs0kpLh1zvUnxsz4mj8WEIdbhsO1mtPNEwCRb3uMUfn90e3N36/GApgPn54ZIS21sOviDnOV0/9oZdXEH+Ero6knSQpIkvmdaQdpb+n5UPOxWUe8cdXH3OuiM4j6nRrcnrOIUis+Zqkx4NsbbC1E499tR0daa1+qy7PLi8uLOzZUWWMb5D2MTENDTb5pwXnvuSF8YeOdmzOx3U6E1JKiSYYLL6hRyLRnt7+KCvMP8JAysVvrkEOFA5D36stehZio3yNvsKI+iWw9gJiE1x6FZVFuCl42frFH02C0CY52ZEUcM1NvVZYKIGTIa+lNWvq9V5ihPmU/H/qGiiaSOPGOhLKbBJgEuOqbDfA7hjMya+mL90vs8vD5/k33miujus7G88aWFsaqqvzLw9+/mjgTHhwQcyJhQks4Ii8XjjQNQzaGI7BPbPfhcbF+MEgkQiB8onGr+6mIv/4Ar8lSnZv1gFrltv1RSBcdnClCzGN0maaZwj9NMzCBLBisWIoHAz/2rfPP8UAh69MpP8tnBz9RRuOAStf0vqQzpQH0sKood/tCsR//wHuyh8lG1tVu4nY9RabpA8l6L6lCD5icfQTuJGyg8BWOwUMyTkq6kw0yCxKYDKfKF7jRN/wWb2le+getWZL977+Z7SM3WnofF781szefmMkNLLP2TmyyYr5c/8GNy8h2NWjl2Pn33Pn46xAwWy2FbOouAtOFu9h//lpZ7Lg+OmnScN4m6x2dVd3q4WNKThfLFDa210ZlV3+MKu8fOVskO4guJgAxWuuzdrnjQ52KwZJO/FU4wNQTcqV7bfkqsYhfHHQEAWU2BqEOk7JnCDKs8GndjddodapuNS5n25UjSah8UPOttQHledc61YgR2GDg8bRthgxPgh2mR/5dTF+9+fbgmUEl7gyloN1kU7WkZXo45pCFf/CKd36a0w7fOWugYfvlWe4jtzlr+AGl+3ea/SbJPkviP2c7g805Fkp6zKde5VInSi+V+WdToOfedS45haQ6BlCiZmXB20rldRZSYI7pbtgs/AWlGP+yKQw9E9MunSnlQzIl7ZQGQL3rCoDGaDMBVpOtEc5KEbr+l0eH2pJD44PShgf/Lfaqs9dK4Ix1BsU/dnGPbR8qrYhmeSP8t4++rij5jvzdCefcOhqtrHXi3ZKtZ3w1Ol3qgUELu6SA1iGlNXxazy1RCJ5pbuY9cpmjwqaU7t1tYE+R2Uspm4vdDX60M8xP3gXw1W2XygOyKJusBpecYlKPLfgpPemy8G1PMwACsdJbdhW78b0x2FXvMMSz+V8XmKmrj25r60LtiZ7eXmAZtzBlaLTrm9Q9HaH3gq4Q6e4Ag5ujPSF1pSiXNbqXk3AgqFkIFWcKYK5srwXw+4PSOjqiyftzgaY7994U2vCbfiaOqydYDW7iVVXGwim7w7T6Wj56ZIssMwG1/F9lLlpBS0vXMzkn0jaZVXjBrldXnH7UP1TFFSNQuSIV6CxhsSwnHcM2HFuoaelTjxr7GwdWLj5ZDM8wOC0q/HSZ67LekffGctuGd5GB+MP84bfiupelLQVN5ev3L0msfcNHB3dJMTEsFaw8Tcix5tnwZYFJ53qCSvQ/ayNSMjwV1D1qUUcB5waXbsuJ1bFDKcHcA+M5M2831xQGf+XrxcT/vbNhiJhTmE0LDvNntb0v/HgDyqfBYplppl5Unx2oGoCrbk9Pex2KXs7yLeA5vL/ib+y1C/XhT61f2Qo/F5FvoKJsq8akCUsolXp4pHFvSsFcru6BPJYhhIt30WkDbiS3rOg8PVSkpuZxp6ZATrURS3F/qMxBibYoeH78HWESm/IUHmUT07V1MKRzb8Ctk5Et32RKg66BPz+hIyZQbOmBMOFr7F3e/TRLAoH16bLXym/Cbr/P6i21In3P3Fc64mhYu1SFRgidlBBmuDVdQwvIFC2MjCkC38P0/WcHUjtJGD5MMvRPLyyL2P2cu7Q/WD/rgcGE2YUfW5YV55uitYiRPsoaD9wRUcvsQDK7Xh41BGhCzUT+4znh7QJun/nKxKsnQbjgpJrkqrf/J0WUKDKCTmn/dUtFoUAuTyzfZrv338k3b4M/FCypmGWzlxMG5KQBc6/Dncnc08+u37s/JK1jaE87XdJ3rVUc4WeBiR8kxeYkxPM96umIQumCJPmmvGD2zZII1Y69qsSCQE2ef+Vc6ZJyL9wHE47X9Pp5KqyodwzAcs/oj8l0biZes1BY/ZluzyHSLeykACFt8+PDG9rcD3+cObDiy2Ea0a01xxU9Jbd829vpeuNpk56pEbTnUvrAVOkCQylbNwg8NEc6nohiSiOBe8I/EaM/FL7reTvudxdFuK8sR4ung1+mcykhSoRo5SacV9rOLxNV1oq2jsw8+RkzWWJ9gKsg0hN1elXfMUdAtViM2qVrkeMHwBkcIMm8oXdO6Xu3ZsnjqyWHjrg+a74OkwQ7RpYpvwiOEK9vOkSv0QcuW5mHRM5YCmtp+yG5Vi0WZH7I3xfAGbPynkxsC5as1Ir1KVe+XSSfmHxeLa7vLO3Eudh90QUPq+Kc++v7TXpZGA+jTEnQsqeikSSVuN/uoZu97PpcQJgLBkMmW3Utb4gO5HhQraMJ/nLASy+qGVarIeV9V2fNklMUxXbrKWI7W3MERJKZj32gqTfw1PjHqjXonNG+dYOGrw2i+/pD6l4hY6yE4q14QYX4hYfMK9eWsAmetZ+q5RV5bqlQ1/gUGGaPm5DbDgj/uKrMdSVFjUnsdrCPL19LvOWvwbxZY4KnmxEc9PyjhVCoY2lKiMn5GwXu78orzXZJMChsDg63J1t72KSVmv74rIwM9COcXkdlXGiPw4WCAXgSzlvVYZHma3Vbz7qi+ZsOXYCtnSJwt8R3bLY0nGM3RqjwVeP33Ir0BH2EVFw/uFgazdBMDJZuGhkes/7IP7DA/VN5tdkeCQqFz8Fh9+ToBHf5djUpMp6sY3GwO+JeZ8NI8ovPqiuF1fJ3hGPNb0w5CPsVFfuqRdfvPLQ1nv73Z6g0fCJA3Vy869WMp5EZ/ELym+9Ofq0xjum41iFEAr8gbqRgzIHUope8n4CYhtMVhh6WKSgpyTuAnkj/p0rFl33uXjan4lm0FEuHqQdygYV6Fm5mFh+4IFbf1qDDadA9G7Przmj8+Y+ly7tLuMnR3YaujmEkFuJ/Vi8cODwn6rnDk7bwlCIkfDU8BgOLuao/sOogSoYjy+nxjfzjh85D+V/805GvLqYgEH6YwTiboRPQ9nOvC/DNUTasvQ1szrBhYDyR73Qgl+949OrTw0zTxggvs2rfvghRhSxBl3RUSpjk9+StInDVOx1htlbHSu9wv+0UTcFHFDk0DJB77Fas+Bv8kxEy3L0lDscFToPK7getsnin0QdlXd3ZhPNG3D8yTlFD06Tx2s8j9Oi0HLAG04Qr601/27GUOGpnnEBijzRn15SQ5jx81UU6tCIpqQWg8nDxpxEBTQv4kfQ2XVvj0zON9N/GCelmBSqgynaWOJRWJk68KYF7Qp56/4eEqD1L6G9TG+js9D3uxPT2gnegiGcAC2g1hjQK1USERG4B3xed12Vzrtpq6rFV1XXb+g3pPpdtQ6lCxb1W4g8BWKzDMYeRBD/W8CpSiCWcwmDMgu3n/kMnexxJdRcQ9gmRNfKEErsapipQ7LbEh+5LitKXOMXvnj7BPWAuUhiS4vS96BL8x7Z054/Bk7AcFKoqISDUK8LFihWyvcRdr3HN1jc0nGKIIembxgiENbbrljeAX7TWigAT23IsLWzVprk1rVUcfQ+rwTJT4NdKfQnzI6bW9PLcjHjjFSu/1LQq2A9vH6WxUGoxgp3T7+5C0p6rSmeC9WptigtGzdtMn+zCnxiJXzl6QWrEJyCIylJGWkvlBYmkh8+A0UuqEtmO/YZPMgRpcTIpqfvteTZer5LkqG5+Y62NPqyaYReJFc/c35Udw45gR5b9JdTbHWNIV1923JZTYjjkwXEsK5nQ2jCxZTO1qF+Wzi93lVlGW0RNhiYcYTASlsAsdfRItLf+TIGPuef+Xd2RtiGUrQjJZa2KSoEhK1rWXgrNgRqYvE5wI+I9mf7hyOGB1FClTutYEwH3qh0uI7fUfJD92hY62OZKcU/ZfSAUga4/vJxF4YE8Hg3oj/37FdbRhmiZ+j590Bvuf0ikgVpwjtQ6LFDN01shQNiHbs05QHJZxFr1q8vMN+h7PBXbt3zGFEqc9jLoYOv3BGgwjNm5B2Iq7tc+DCttpwwKlUtAmT+JCFDqRFKGbt6MRGqBA2R7UwwrIglsgQbdblgDwPmdAyumJ5Rp7QE27STy2X6wkgfwM82Kckjbo0xvXIK09wJTDylHNMPaTM9Nzt+EAxyZSJpWIMKFJIVJEgmoCFqtRk/KEZREQPdzjfOxq/6egAdna3vxv1281j9cmsW+0EWryA1ACmFmCISTeZmDgPHJdyY6birY8TKAPslMn2M+L3nRzAN/gytjVb5abuGVJxRuGgaFs6cP3K4xKWahD7Nh9bDZinw7oyy+QpiiD2Vf+RRYSA72c7ul2rggfX6ETzucEkI9P3PIixqgo2PzOLBx91CNvqddeMABoMiD/Cq3tWIako4Y8EojD4zQ8iWWD+LDufBuuAXUsyXROorFBQ2Zp9mQ6uL3Eisa0wFa8/GKahdTczZ0HU6AqhU795fHSdFDUe4Q1Sep7f6a43CYhlBKb9d+SNdA7gXQ3TvPNo3HqVIMB0b/7xShViEuYlm6m3GJ8UnVrhDeAQUFuPHDds7xwyOwN43iiReEEuDxucZ5z1U/Tz6cDRVcfNBw5rWNKhFilFPDOThMBGQG6AE3cqqkluUihw9ZeUEwn1ke7a7a7IuKg0AZNrWs4ENrz2TRPB2N4vCICDp2QeIzr1qAgWoiT3UqYoLztVc6zZ98dg2CP4XV+y4A6FZx9/Kf4kU1fyPpLiTCYjnj/Idbkw4MJuqspfHnwAbDfAA//d/UTyj7S1cuwKfC63vzf/nIub/Regl/DztoadICY0Spv6SDVQURaVFQKkxeJFoAXatXCuVEROXIyKlP/yidy7x3E6bi2wFxBSiDfVYZlcRKrkbD44KzfReAyuhofufvpe4l1xcaeXg6qSBqynwcAoRNWBwqyzAlzNBLRgyHW61knE3F7Ul7D8gLmWWaK3JkYrIQzu4J3CyZwUSftfSx6F6+3QFUPMdz2wqEOb2mbsZlMdvlixY+sr4PAUg45dVA33Y/sj9v4pDmGTsFD5bv+NRNz6Yk6BXMG7jAJsoL7AxiQojhCj6UveUTYM/3SdWFAoUb4qtc2OVmGsUjKOEquBxUGdn25/OT003T+3lqoqEwaqj8ejdLTLCAGKboo7y9YszH/Ps9YyArF5M+A8VBL8m2vH/mrrISYiMAR4squKIiGpU58pmf2Nb0hQEOJER5Ybyi6kKD186RO6oBEQWprnh5nk59RtTYG9u3NA/ICyqz8OrahamycfBw5Db94YKzb84uWv9nmndidbT/WMPAvVPZnxoTWG4tF7Y+94dquKydP2iefw7rABTlH39g0ToyvWn8nn74cEhg3alrtgaKadpNcPHsxgK033cUkKskB6kLV1qf9ri/DF++KWAOH4ue5cf/TD++S4u3QrIWh6H6LAFBOqS60IbioRsAy6CX8vHz1Wq+5AAHyTP0Br2nmvCJQkX2/9WyzC+qAxVie2PfwOvJimkm2ZvXd0j9jL6Ch7LFuJfjInFiPnzThQPzQJRoTWS1nSd9kH2a6Q8uG0BJxUWvNbAKhMJAA9syNxN0cAAxkmSvtL1gzMO8HweQHrj5HI1OjvmHh7GMAqqfsQ9CO1EiiadRU/12CgqjK8odok3LnrP8vTWonuaZF7L3W/vzkbU9BQmOJdk/3UvdK8A1Sob1Wx8ndgr6rLWPWffy1vBErL3pbXNBBR2W9B+yTNPHsnv56fBEodXjvXVneJf/DzJaG9JJAbWX24vtPiFrLUvHrR1d8812yE2hBhDfzQdL015lwT9ffNCxa5dzrVXNbot81lHOhWluSWfKQDg1sYbXEOAvJsVZEIKAtSWpBjmnEMTVwq7sW4FmtPbd1L7KVmSjCJ4HTnx3e2W/+vVHqtx2LRJJCXOitc5WJUZYe48QIwg6h13ynL949e38Ah2rYYNAKZDAVDFA/ioGDz1tNPxJniQNqX/aiHjiO5gcDBFsPbpR/5RMtXTna/+BhfF65ZXkl2h41X1mO5b1ER+fQXIkkhaJpFchTFA8W7xEca/R8LNxCJLjnHjwIQwtB/kh3eS8QrXMt+yUpa1GFuByXrEwHMARPYOv/Rk6jMOQz9jgK2IDRb0UmjsBRsqW+5SIwikU4MNGkWmb0mrFDbEUAm5rMTlGvI+pazEMQZD5MAzcnxjXjIcUmqtjGRxwQMTjdBZoHi/m/N3rLsLN488NaxeniRzWM2JfJxMLfZW10J2jrQ1iSdSBcIDwCL2UZgyhmtAMU3KKsVs9iWS9hLJPAXXgNFAJ0wsWhcnLgZV/FA2fNKkD9u0rLYH8qTEbbIiHtxcCVzsz5mtPDHLdd3DwPw9fPj5v327fIPg2REcQb3/PpKyY4cPEFyzs59n9H2Q3Nc7E8z08/p0c7WUTU/yrMVa+5GYj8UAmNSjeX2fYPCoyw8EToD84vTp7J5IxyQjZ1O/J0I9UsDP64MRgMeb3jLOqONusPgqU9UUVbgK31CLGBUZxqrfAm+/YgAfqXXzJLkmJpEUC9PdGYQU6b5vFHCPGUOSQIOv8xcC4uiJWgLspHd0UWjLjRZqt5FsyXOOZjvYq7sbfuhN9szB/BS6cubw3rrkwZDBz6/aE21p9kCXDxdr6ixI5lsU1efy3l7XqkZY3c3oh9SKgjeAw3apVU11a6k6XmmVu14y1K+gF+qev1j700azT9gi77ZRnWalsHFStJ9qZ2pFKy+Kntos9czj1DWyW1X0COcLWWTjNMtYS+5BqwVXxoUBPz5a2W7da2tvar15va9/Zdvv6zvb2LulDNXXHVqpqqqrXjpXtqGw4vVRRXb3jpMh7P4BqdKHrOnXOaOiB4iv3mvoEsR/b6kGsLt9vpxN0Dg4zOM8Tmu22xlacF1gCfderL8fEpkWmlWNitRevHiBq6f0zftmQnq2t+C1gUL1Hshbg5dHb0t/b1t3658O+1t6d1y/1zGdmR/PPoihsmpRcpIFpWxgt4v95Ldn5G9JcB1G9wF82vCtHTd8arKMj0QT7tXesGZoMeyXDCcvZgbYMo9IW92gsNOrWmviZN1Wdu9hQ1VR97LC8zNXzDeUttRkAWVNDwG6V03s1tP2pddBOgzHIwE5gPQY9NOitg+aDwOh0/7DhZiPJ794B0rWTt0iihI4gtmZPhnaQH5Wh5Rkh3Vsz/udrtt/1U1F2NnFNu/flA83rHEAR5gON6p8zg13b4Fcy1Y9UabNHToaIZtVXfBi/At9dFdr7hu52DY5OqwuUSvoYjAWMBUWefpsiLykIi9kBm3sCvO94E6xGrEaf6wJYOHJUADwWG3Rh/UJBPhbOxO39nN3BFHQsUptMhY2dXyCY8EtFVYJUjzPVVJI1TGqoQSnC6HAW3jlC2hEWpTSn560Mc4cxVdVF0towgaKSgYHFZDZO+cZbSOOe3mLcqRpEJvqFHI6t81aGjH2spqn3P9EL/YLwHdgi6JnxAdJGcCXJuK/co3ws7oa8uZwOHu4P4+7D/UeyDdzCYp7LO2JvkejSqllvZAQa6U8MdtxLJJBhz/Nw8t8wilI3sL1xGCC72aRofqCYMGL7RNliP/fwUINLwbu4Os7ZznURugj3pkcgsnaf7OkEqfy3UNdv68t9oKOlBTHDB3C+Y19iPEeXllEoX2HmUPJAUbXBNIIJerUmDCHlqEAdVctBZxmy4WnwKGRMbFppWjQmvvrSaffLFQWD+vJfb3ZP9sowMMmXnhJewybiLyHOp0HwAmnfTNxhC+ccpZ0eCKMTv9Eff9RRGIgAy7X3n6jkKRIRuo2CQUvpBfh0f/qySx5ryQfbKnZHr8U6rnn38Ww7yDUL0fGcYZ4ffpS9JTsUqeNg3V4w+5TjS1BGV/1ouC2xrfnQ7LnKess4uq1Hto4dWglyD0zgzL59tkba/S1fNybh7+YG7eHcwmwaw+AilqN2I+fDK9Pb9FRPBMQTwlJ86x1asSw8e2lIHnjXWf99x7qoURDxfrsaNsoFu6mmlHr2ePVoajZdRPzqEDsXN+QNarSR8x6ezC4KoVwV6tyUzS7qqmBHMdpJt4f+drlEP5WvHsTBtfPlNtXr3hgKoonAXXEbZ1u17xnemHuXQQ0ImPoxdorZB/YMFNWXTN0UjcRq4RVV+0O9WJe8Z/D06plkv7iEGoFyyp1kn9jE2hAVUJenJ7eB5sMlw//0wUEQcf9kb/5ML7afG4Ar6vR20XJ8vKIki+lXDVuNTdEB87QYbEwG3VpETzKJv633U2J0mQa5AAX0YyVXL0aXnngROJUl42kmQcYTQoX9tUigfjyupDxI+hrHkVMN015slkwVRTlcrLUFcsq5Bc2t+FhvdMuJuv0DffgSGQDYt2S0TDONROifrfmuciwy9KDbhgeDsBRryisdsWUwfAbpDbGo/FHAPqpxCP9l7WUgke6I1Fc5X9Dc5MUMG+9WtVaobmpOS6MpXENTFCQCaXknJPgPfG3sex5s7asFSiP2ERZxzHq6UZK8MRFXtIJDqFNTTPcjO7iPtrDpcMeTsuQYfVujHTOwuwYRifz8Wgpii27yhFyLMLri0IMyRSVU4RUfN9avbEjEVx48uCaWPLp2uVTLhO9eAEHP3365aZsh6QmTZksYLTWw8f+aO+VNswjcJ6OBdqSaiaZHm+wxLHVLooaqj8Z2/9sSUTlNgEAj1kfqcNe1L+V9TEZG8Iq7ADNTH1RYT12NHddRsdx/7HOj+vv2eI6GESMx10Sj3WKFShHOaFiU7eYI+w8cXpSEJcs+PHUZt0a313c+wThHnfbg7lkXK8QmYmQ8kjDkO0h0sT0o/2AZx6nJJpCtDV9paJv3PDkfbb2iBYqddyalUmLQ9zNlmAF7Lh+evRurl1wU1IJGLKz4dsJkwihy8wo1i/Y3QQj6CAiGjsv2/ffa84uaQwG8FQqWUj5ke/qkICJMQ2UVaKq/+NMmj1KTjxmIW7JW75eWrgmNnn82fWYlVaMz84Y4UNN0jzYsVCpgm/KsDrGhXiXaXUU6NrWSEu8GCLb7ewKDbf77Es+Vj1A15J4/C49tsgOpUL86dM4rWE1baII11m/8uEvTOvmkatpWFJeyUSYeGW1Y+RhJTO7y7m1fH0JcrCuFKPuJCeAZS9GCTzW9GhoSwneeV1bCGTmUsV2al/CqWOBSUAfTy9emwD3v5vEehBi5yZCI57qNl/U+lgoObnPvDkMmXyb35h0bOE7JVlr7Ss7pXDp844IK0C8MT0Uc4qz67BymwZ98JZj+JONspPqMmHcyOcbfTW5xT5+V9I4KcYuy2TNcqS88BOzxAzerTApYsFeQ91nftx3YPQuayCywM4yRabpS9pZNaEOFhGQaBLaDiMM/TDiueVPt4Ksiu9TGoD1FzioRrzf+mqj+Q6DeqOe7Og9Tk9z/G2h9EEuIDfmtbbAs0sLL8qZRkRyGLImCZrrVqKa47Kw7U2qWWbZLOnWjRadjFew9zY6zUlGPvtgG+AOuSEHdtQgkNku7Uv/5ywcRZ9IXcH/Qe3AHgAtpHBk22PANogkOqbu80AYQfD1ipLZljdsGZNGHkjpikDeM236vyeFv4QNN1mG5482G13ppUsN31daNMWU0+qPVX0vaLt/uLiWH8PbG9WVnbny4sXhFAUajO3KzowwjPQfMIx8nUsUGz2I8FGJQ+gYrp8Dy3cPe/gcK6LPuSoE0RC1iBYXkVgT0eavaZSeg0aDcxzEgnv3JNIiErF4vIrdy2oL5Pk/V/fTlnHdrLnl7mbAzoitucImcvgZvrillt9/5hc4QxmZEZVtDjpredmrBiRbZr5myvkeTluCjAmwA7dOQmU+yx4s+jQrPSfAM0oF8c9fdQH4BCJC/AOgAhLJ63q92zhtYHdX+Q6mB0uNrodRAldeJBqCv8qJvhAnYurk45JHkvP/nwT3Vqg+DHulGkOxoeF4Rb3rS1FqFd4tgGyY5r3M0Ja+G5iA3XhvfRoeUluwxbLUk5+32QNR4dRwdoTonTsrNfqPz5JtV0uYmOe+/8l83m6zKbS8NtLimR+Fh7DK4zLubrv1PSM77z/jXieRVjh3XOLljAF0QWep1f12SYfqvLLhbh+2bkJz3/6Ff/6hWVXQKDE/d7Mm5f5uMy0JqM94fyEOUsftJeYiyvGN04e6MoV/D5rN+geSHX0Jvz5s9AorH954FGPeBCJavrTh+/eaaVw4AAK59HPlXtXHof6dGRUDnX0NxNSPtJ2H6i4uwb4/AlUCXRr6ou0gI+a42WDHMivpCg0221TN2tLK8NinCV0r9Brn9sNSh+g36NGtmqVOVXfZLtc/+v16aK4z1TkOMLFX6szko9cVM4aELqxWFRsIQDAr7fngoxSRk5qPpjNALMKf6ahybAsCvmvFUXMk3c5iaI2J0LxiQjvwYXEQdviz6V9AsLe/qWpfYbR9FFmwQmFPX86cOrXlivYaMH1sipnxLfedQ6D0gs6+FsqM3zurZ0mjTXI6beFEeIldqs5g/rRJsWnIjXWAKJn6YwU6Bt9Y6PRpZVCsgH6rq0v/ac1H2yZTA2F0Shcww8lp5mGKs550CiSxnaEUuKzSQIpOOlUsDlT51FIIQAwE58yVjb8aBSgF5Q5uhdPbcPFXJc9dEv7CwovoCAtDfAZ8/quuNknX+HYPDgHHX9Xe0TsNA/2/9f+7YoSPXf0xCMAcMTPs/IOY3R5n/BuHAe3xFv7z93VWQPwD9BkCfw4cXuclRkrvYLjOu04jDCIMOa6SIRZi+pOYP6PGZbHKojG/wVQg2cUA3noAmC2nCASk3SOUD7XmcVd6nkctz9gF243lkmfETOs2YpTQg0fdBjdCGLxURtQ2hpihOe1olCxDzJJX8RbVW+c5r1KY+9RkLVeNM504Km4hxieitMNolx3AFUa4RunWa0fyXam3nP68z35DAvFIZlEefnSusxx/SUpnG+NhfQ0B/Hu+PgQEz2U8vJbRSDiXZtFOVXpjQyXXkLKUw7tIYT2jGeZphSqG8mOduRhlNI2fAMgshTehmBdVgIOYtxjnZ/xUWGCWDVF6nkxhgFCYI/mEVPLgoYTr805+bqShVS8gEQGW6YEwAfZVXuGT2gCO1jEQM5XmLQcyLnpE2m6KdQ2OK2gRlPLdIxzjpapqleY/sMmCU8oRMAF0zXoDCEXHe4lfVzOo3WNY4n9BmWE3U0p8206thZY4yYD5gLugCTEHwgq4l+/sdeAOTgrnZoNKG+aALgUcXYN7y8jOD1NOFS/+XzeyLugUBNqNaepm8cbcPGrVmFwiv5ct9N8OMJlVQxoHIbKo2+S9oYzlHGwQJ1CI8BCKEdkuHN4BArg+QG6EIM3g6aAAklSlO3rKhehINfrnwgCoE4pQCJAkMwzBPnAZw0JQaM14FbBVEfWSqYDCjSQXHGZ2jIvxUSPrjhQpFP/BAqmJYq/AEEaCSHuTYO6cyqHmGpwyZimRLlkQsF5mhOEYaW/87Gms5RkphjsyAREydFaM7WYE8OSFswXMi15mMI0GOmLPlMxtvOrxkSPdMHSCGRALLx8bJEmWzqXVLnmwubIax28xheSktOTiCJMiNZyMLkUxEEk4jsWHxiO3gHBYstyASHQViZLOhvNg0zcZZbHqimLN5SRdPDyuHEwjMPvy0ECjT35s82I+EMMUCAjaHcIa/YMV8Fnj1WQ/KShNPDRdxdsVg1Qnz3ULmmELKy2rFjIOkZTF/K0aUC3oiyxaE4aHWmzEM+HCA+SKzcyZHFixsP5RKcznQgikzJFbSYi49p1kW4g4GSPjJJJGWT0Rm5zc2zYiPkS8ks2kjERuccMLgmNgWumAb5WbPVxItOeJOBDYz4Zz0QTqdeeKO/xYCefELG324MfxPOGEW0QwA) format("woff2");}
+
+
+
+/* ============================================================================
+   Slides Squire — shared UI system
+   Canonical source. Edit HERE, then run ./sync.sh to push into both tools.
+   Consumers:  Chrome Extensions/Slides Paste In Place/content.js  (SQUIRE_CSS)
+               Figma Plugins/Sync to Slides/ui.html                (<style>)
+               Figma Plugins/Sync to Slides/dev/components.html    (gallery)
+   Design:     Figma Medieval-UI 44:2393
+   Model:      shadcn/ui token names + component anatomy, vanilla CSS.
+               No React, no Radix — neither host can take that runtime.
+   @font-face is NOT here: each host resolves fonts differently.
+   sync.sh injects the right block above these rules.
+   ========================================================================= */
+
+.sq {
+  /* --- palette (shadcn semantics ← Figma variables) --- */
+  --background:          #e3e2df;   /* shell                        */
+  --foreground:          #382c23;   /* status copy                  */
+  --muted-foreground:    #383139;   /* kicker — Medieval-UI 58:2052 */
+  --ink:                 #383139;   /* ink/plum — type ON the shell */
+  --primary:             #383139;   /* ink/plum — resting button FILL */
+  --primary-foreground:  #e3e2df;   /* label on ink                 */
+  --live:                #d70021;   /* live/fill — engaged button   */
+  --live-foreground:     #e3e2df;
+  /* Red as TEXT or a RING on the shell. --live itself is 4.14:1 there, under
+     AA, so type and rings use this: the same red a step deeper, 4.82:1 on the
+     shell. Reads as the same red at 8px. --live stays the fill. */
+  --live-ink:            #c4001e;
+  --warn:                #735612;   /* 4.81:1 on the shell          */
+  --placeholder:         color-mix(in oklab, var(--ink) 72%, transparent); /* 4.91:1 on the input */
+  --input-hover:         rgba(0,0,0,.12);
+  --border:              rgba(0,0,0,.05);
+  /* Veils tint with the ink, not with white. A white wash on a warm light
+     shell lightens toward nothing — the control fades as you touch it, while
+     every other control in the set deepens. shadcn does the same thing: on a
+     light card, ghost/secondary hover (bg-accent) is a step DARKER than the
+     surface, never lighter. 7/12/17% matches that ladder. */
+  --veil:                color-mix(in oklab, var(--ink)  7%, transparent);  /* badge, chip, input */
+  --veil-hover:          color-mix(in oklab, var(--ink) 12%, transparent);
+  --veil-active:         color-mix(in oklab, var(--ink) 17%, transparent);
+  --rule:                rgba(0,0,0,.06);
+  /* Focus. shadcn's ring/50 halo measured 2.13:1 against this shell and
+     1.52:1 against the dark-mode button — under the 3:1 a focus indicator
+     needs. So the ring is solid --live-ink, held off the control by a 2px gap
+     of shell (shadcnblocks settings-profile1: ring-2 ring-offset-2), and is
+     only ever judged against the shell. */
+  --ring:                var(--live-ink);
+  --ring-gap:            2px;
+  --ring-w:              2px;
+
+  /* --- geometry --- */
+  --radius:        2px;   /* controls */
+  --radius-panel:  4px;
+  --control-h:    31px;
+  /* The spacing ladder. These are the values Figma already uses, named —
+     not moved. 7px (the badge's icon gap) is the one Figma-drawn orphan. */
+  --s-1:  2px;
+  --s-2:  4px;
+  --s-3:  6px;
+  --s-4:  8px;
+  --s-5: 10px;
+  --s-6: 12px;
+  --gap:        var(--s-5);
+  --gap-tight:  var(--s-3);
+  --gap-row:    var(--s-2);
+
+  /* --- type --- */
+  --font-wordmark: "UnifrakturCook", "UnifrakturMaguntia", Palatino, Georgia, serif;
+  --font-display:  "Enchanted Land", Palatino, Georgia, serif;
+  --font-body:     "Cooper*", "Cooper", Georgia, "Times New Roman", serif;
+  --font-kicker:   "Suisse Intl", "Suisse Int'l", ui-sans-serif, system-ui, sans-serif;
+
+  /* --- motion. Tailwind's defaults, which are shadcn's motion layer. Three
+     durations and three curves for everything in both tools. ------------- */
+  --ease:     cubic-bezier(.4, 0, .2, 1);  /* colour changes   */
+  --ease-out: cubic-bezier(0, 0, .2, 1);   /* things arriving  */
+  --ease-in:  cubic-bezier(.4, 0, 1, 1);   /* things leaving   */
+  --dur-fast: .1s;                         /* press            */
+  --dur:      .15s;                        /* hover, colour    */
+  --dur-slow: .2s;                         /* enter / exit     */
+  --hov:  90%;                           /* shadcn hover  — bg-primary/90 */
+  --prs:  80%;                           /* shadcn press  — one step further */
+}
+
+
+
+/* --- reset. The extension injects into Google Slides; assume nothing. ----- */
+.sq, .sq *, .sq *::before, .sq *::after { box-sizing: border-box; }
+.sq * {
+  margin: 0; padding: 0; border: 0; background: none; outline: 0;
+  font: inherit; color: inherit; letter-spacing: inherit; text-align: inherit;
+  text-transform: inherit; text-decoration: none; list-style: none;
+  -webkit-font-smoothing: antialiased;
+}
+.sq {
+  /* The host page's case stops here; inside, children inherit their
+     component's — `none` on every child stripped the badge's caps. */
+  text-transform: none;
+  font-family: var(--font-body);
+  color: var(--foreground);
+  line-height: 1.4;
+  user-select: none;
+  -webkit-font-smoothing: antialiased;
+  /* No widows: a sentence that wraps never leaves one word alone on its last
+     line (Jasper, 6 Oct). Inherited, so every status line, tip and toast gets
+     it. Chrome 117+, which both Figma and Slides run.                       */
+  text-wrap: pretty;
+}
+/* Reduced motion. Apple's HIG: replace movement with a fade, don't take the
+   feedback away. Colour changes are not movement, so they still fade; things
+   that slide, scale or loop lose that and keep only their opacity. Each
+   surface's overlay says what its animations become here.                    */
+@media (prefers-reduced-motion: reduce) {
+  .sq *, .sq *::before, .sq *::after {
+    transition-property: color, background-color, box-shadow, opacity !important;
+    animation: none !important;
+  }
+}
+
+/* `hidden` beats any component's display (Tailwind preflight, under shadcn). */
+.sq [hidden] { display: none !important; }
+
+/* --- panel ---------------------------------------------------------------- */
+.sq-panel {
+  display: flex; flex-direction: column; align-items: stretch;
+  gap: var(--gap);
+  width: 320px; max-width: 100%;
+  padding: var(--gap) var(--gap) var(--s-6);
+  background: var(--background);
+  border-radius: var(--radius-panel);
+  box-shadow: inset 0 0 0 1px var(--border);
+  overflow: clip;
+}
+
+/* --- header --------------------------------------------------------------- */
+.sq-head    { display: flex; flex-direction: column; gap: var(--gap-tight); }
+.sq-head-row{ display: flex; align-items: center; justify-content: space-between;
+              gap: var(--s-4); height: 20px; }
+
+.sq-wordmark {
+  font-family: var(--font-wordmark); font-weight: 700;
+  font-size: 19px; line-height: 19.95px;
+  color: var(--ink); white-space: nowrap;
+  display: inline-flex; align-items: center; gap: 5px;
+}
+/* The mark — Medieval-UI 58:1484, rendered from Figma at 32px for 2x. Drawn as
+   a pseudo-element so every surface gets it without touching its markup.
+   Source PNGs: icons/mark/. */
+.sq-wordmark::before {
+  content: ""; flex: 0 0 auto; width: 16px; height: 16px;
+  background: url("data:image/png;base64,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") center / 16px 16px no-repeat;
+}
+/* 4px, not Figma's 2px. Badge (18 tall) and the link icon (18x18) are both under
+   WCAG 2.5.8's 24px; the spacing exception lets them stay that size only if a
+   24px circle on each clears the other. The link's circle reaches 3px past
+   its edge, so 2px failed and 4px passes. */
+.sq-head-actions { display: flex; align-items: center; gap: var(--s-2); flex: 0 0 auto; }
+
+/* --- badge (shadcn Badge, secondary) -------------------------------------- */
+.sq-badge {
+  display: inline-flex; align-items: center; gap: 7px;
+  height: 18px; padding: 0 var(--s-3);
+  background: var(--veil); border-radius: var(--radius);
+  font-family: var(--font-body); font-weight: 600;
+  font-size: 8px; letter-spacing: .16px; text-transform: uppercase;
+  color: var(--ink); white-space: nowrap;
+  transition: color var(--dur) var(--ease), box-shadow var(--dur) var(--ease),
+              background-color var(--dur) var(--ease);
+}
+/* 9x7 with its lines on half-pixels, and a 1px margin under it so flex
+   centring lands it on a whole pixel (y 5 in an 18px badge). Off the grid,
+   1px strokes blur across two rows. */
+.sq-badge svg { width: 9px; height: 7px; flex: 0 0 auto; margin-bottom: 1px; }
+
+/* --- icon button (shadcn Button, ghost + icon) ---------------------------- */
+.sq-iconbtn {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 18px; height: 18px; flex: 0 0 auto;
+  /* Matches .sq-seg, which sits beside it in the plugin's head row. The seg
+     can't come down to 2px — its radius is its pills' 2px plus its own 2px
+     padding, and nesting equal radii reads wrong — so the icon button goes
+     up to meet it. Jasper's call, 6 Oct. */
+  background: var(--veil); border-radius: calc(var(--radius) + var(--s-1));
+  color: var(--ink); cursor: pointer;
+  transition: background-color var(--dur) var(--ease), color var(--dur) var(--ease),
+              box-shadow var(--dur) var(--ease);
+}
+.sq-iconbtn:hover  { background: var(--veil-hover); }
+.sq-iconbtn:active { background: var(--veil-active); transition-duration: var(--dur-fast); }
+.sq-iconbtn:disabled { opacity: .5; pointer-events: none; }
+.sq-iconbtn svg    { width: 12px; height: 12px; display: block; }
+
+/* --- kicker row ----------------------------------------------------------- */
+.sq-kicker-row { display: flex; align-items: baseline; justify-content: space-between;
+                 gap: var(--s-4); height: 6px; }
+.sq-kicker {
+  font-family: var(--font-kicker); font-weight: 400;
+  font-size: 7px; letter-spacing: .975px; text-transform: uppercase;
+  color: var(--muted-foreground); white-space: nowrap;
+  text-box-trim: trim-both; text-box-edge: cap alphabetic;
+}
+.sq-version {
+  font-family: var(--font-body); font-weight: 700;
+  font-size: 8px; line-height: 8px; letter-spacing: .3px;
+  color: var(--live);   /* Figma 58:2052 exactly; 8px numeral, not body text */ text-align: right; white-space: nowrap;
+  text-box-trim: trim-both; text-box-edge: cap alphabetic;
+  font-variant-numeric: tabular-nums;
+}
+
+/* --- separator (shadcn Separator) ----------------------------------------- */
+.sq-separator {
+  height: 1px; flex: 0 0 auto;
+  background: var(--rule);
+}
+
+/* --- status --------------------------------------------------------------- */
+/* 22px, not 1.4 (22.4px): the .4 put the plugin at 220.4px in a 220px window
+   and gave it a sub-pixel scroll. */
+.sq-status {
+  font-family: var(--font-body); font-weight: 400;
+  font-size: 16px; line-height: 22px; color: var(--foreground);
+  overflow-wrap: break-word;
+}
+
+/* --- button group (shadcn Tabs list / ToggleGroup) ------------------------ */
+.sq-group { display: flex; align-items: stretch; gap: var(--gap-row); }
+.sq-group > .sq-btn { flex: 1 1 0; min-width: 0; }
+
+/* --- button --------------------------------------------------------------- */
+.sq-btn {
+  display: inline-flex; align-items: center; justify-content: center;
+  height: var(--control-h); padding: 0 var(--s-5);
+  background: var(--primary); color: var(--primary-foreground);
+  border-radius: var(--radius); cursor: pointer;
+  font-family: var(--font-display); font-weight: 400;
+  font-size: 16px; line-height: 1;
+  /* Enchanted Land hangs a lot of air under the baseline, so centring the
+     line box leaves the word sitting high in the tile. Centre the cap box
+     instead. Figma also has kern off on the tab pair (node 44:2419); that
+     reads as a slip rather than a decision, so kerning stays on here. */
+  text-box-trim: trim-both; text-box-edge: cap alphabetic;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  /* Named properties, never `all` — shadcn's Sidebar rows, Badge, Input and
+     Toggle all list theirs. (Its Button says transition-all; the outlier.) */
+  transition: background-color var(--dur) var(--ease), color var(--dur) var(--ease),
+              box-shadow var(--dur) var(--ease), opacity var(--dur) var(--ease);
+}
+
+/* States are shadcn's, not invented. Their Button steps the fill's ALPHA and
+   leaves the hue alone — hover is bg-primary/90, i.e. the same colour at 90%
+   over whatever is behind it. One step, every control, both palettes.
+   Source: ui.shadcn.com/r/styles/new-york-v4/button.json                     */
+.sq-btn:hover  { background: color-mix(in oklab, var(--primary) var(--hov), transparent); }
+.sq-btn:active { background: color-mix(in oklab, var(--primary) var(--prs), transparent);
+                 transition-duration: var(--dur-fast); }
+
+/* Engaged — a toggle that is on. shadcn's Toggle keeps a hover on data-state=on.
+   Two departures from shadcn, both invented here, both for contrast:
+   - Hover and press DEEPEN toward the oxblood instead of stepping the alpha.
+     Red at 90% over the shell fell to 4.41:1 under the label, 80% to 3.82.
+     Deepening measures 5.50 / 6.05 light, 5.12 / 5.67 dark.
+   - A 1px cream hairline inside the fill. Red against oxblood is 2.45:1, so
+     colour alone didn't separate picked from unpicked (WCAG 1.4.1). The
+     hairline is a shape cue: a key pressed in.                             */
+.sq-btn[aria-pressed="true"],
+.sq-btn[data-state="active"] {
+  --inset: inset 0 0 0 1px color-mix(in oklab, var(--live-foreground) 30%, transparent);
+  background: var(--live); color: var(--live-foreground);
+  box-shadow: var(--inset);
+}
+.sq-btn[aria-pressed="true"]:hover,
+.sq-btn[data-state="active"]:hover  { background: color-mix(in oklab, var(--live) var(--hov), var(--primary)); }
+.sq-btn[aria-pressed="true"]:active,
+.sq-btn[data-state="active"]:active { background: color-mix(in oklab, var(--live) var(--prs), var(--primary)); }
+
+/* A tab can't be un-picked. shadcn's TabsTrigger gives data-state=active no
+   hover rule at all, so neither does this.                                   */
+.sq-btn[role="tab"][data-state="active"]:hover,
+.sq-btn[role="tab"][data-state="active"]:active { background: var(--live); }
+
+.sq-btn:disabled, .sq-btn[aria-disabled="true"] {
+  opacity: .5; pointer-events: none;                /* shadcn: disabled:opacity-50 */
+}
+.sq-btn--block { width: 100%; }
+
+/* --- input (shadcn Input) -------------------------------------------------- */
+/* The edge at rest stays at 1.14:1. shadcn's own input edge is ~1.26:1; the
+   field is identified by its fill and a 4.9:1 placeholder instead.          */
+.sq-input {
+  display: block; width: 100%; height: var(--control-h);
+  padding: 0 var(--s-5);
+  background:
+    linear-gradient(var(--veil), var(--veil)),
+    linear-gradient(var(--background), var(--background));
+  border-radius: var(--radius);
+  box-shadow: inset 0 0 0 1px var(--border);
+  font-family: var(--font-body); font-weight: 500;
+  font-size: 11px; letter-spacing: -.11px; color: var(--ink);
+  user-select: text; cursor: text;
+  transition: color var(--dur) var(--ease), box-shadow var(--dur) var(--ease);
+}
+.sq-input::placeholder { color: var(--placeholder); opacity: 1; }
+.sq-input::selection   { background: var(--primary); color: var(--primary-foreground); }
+.sq-input:hover { box-shadow: inset 0 0 0 1px var(--input-hover); }
+.sq-input:disabled { opacity: .5; pointer-events: none; }
+
+/* Invalid. shadcn: aria-invalid:border-destructive ring-destructive/20.
+   Source: ui.shadcn.com/r/styles/new-york-v4/input.json                      */
+.sq-input[aria-invalid="true"] {
+  --inset: inset 0 0 0 1px var(--live-ink);
+  --halo: 0 0 0 3px color-mix(in oklab, var(--live) 20%, transparent);
+  box-shadow: var(--inset), var(--halo);
+}
+
+/* --- focus ---------------------------------------------------------------- */
+/* Last in the file so it wins every tie. It carries the control's own inset
+   line (--inset: the engaged hairline, the invalid edge) so focusing never
+   strips a state off the control underneath.                                */
+.sq :focus-visible,
+.sq .sq-input:focus {
+  outline: none;
+  box-shadow: var(--inset, 0 0 #0000),
+              0 0 0 var(--ring-gap) var(--background),
+              0 0 0 calc(var(--ring-gap) + var(--ring-w)) var(--ring);
+}
+/* A field focused by a click shows no ring: the caret already says where you
+   are, and the ring read as noise after every button that hands focus to the
+   field (Update Deck, the link icon). Jasper's call. Browsers count any text
+   field as :focus-visible, so the host page marks how focus arrived —
+   data-modality="pointer" on .sq after a click, removed on Tab. With no
+   attribute (the extension) the ring behaves as before.                     */
+.sq[data-modality="pointer"] .sq-input:focus {
+  box-shadow: var(--inset, inset 0 0 0 1px var(--border)), var(--halo, 0 0 #0000);
+}
+
+/* Board Baron / Sync-to-Slides only.
+   Its script owns a small class vocabulary of its own — the status line's
+   has/err/warn, the send button's working/waiting, and a tooltip. These map
+   that vocabulary onto the Squire system rather than changing 40KB of
+   working logic. */
+
+.sq-status.has  { color: var(--foreground); }
+.sq-status.err  { color: var(--live-ink); }
+.sq-status.warn { color: var(--warn); }
+
+/* Sending. The button fills left to right with live red as the bytes go out
+   — the same two colours as its resting and engaged states, used as a track
+   and a fill. The label is drawn twice so it stays legible over both. */
+.sq-btn.working {
+  position: relative; pointer-events: none;
+  background-color: var(--primary);
+  background-image: linear-gradient(to right,
+    var(--live) 0%, var(--live) var(--p, 0%), transparent var(--p, 0%));
+}
+.sq-btn.working::after {
+  content: attr(data-label);
+  position: absolute; inset: 0;
+  display: flex; align-items: center; justify-content: center;
+  color: var(--primary-foreground);
+  clip-path: inset(0 calc(100% - var(--p, 0%)) 0 0);
+}
+/* Bytes are all sent and Apps Script is building slides: nothing left to
+   measure, so keep something moving and say so. */
+.sq-btn.waiting { animation: sq-pulse 1.4s ease-in-out infinite; }
+@keyframes sq-pulse { 0%, 100% { opacity: 1; } 50% { opacity: .72; } }
+/* The pulse is opacity only — a fade, which the HIG keeps under Reduce
+   Motion. Taking it away left a button that looked frozen; slow it instead. */
+@media (prefers-reduced-motion: reduce) {
+  .sq .sq-btn.waiting { animation: sq-pulse 2.8s ease-in-out infinite !important; }
+}
+
+/* The courier tooltip, hung under the badge. shadcn's Tooltip opens on focus
+   as well as hover and closes on Esc; shadcnblocks offer-modal4 keeps nothing
+   on hover alone. So: hover or keyboard focus opens it, Esc / blur / leaving
+   both badge and tip closes it, and the pointer can rest on it (WCAG 1.4.13).
+   Enter is shadcn's fade-in-0 zoom-in-95 slide-in-from-top-2. 11px, on the
+   input's size, rather than a seventh size of its own. */
+.sq-tip {
+  position: absolute; top: 34px; right: var(--s-5); width: 196px; z-index: 5;
+  padding: var(--s-4) var(--s-5); border-radius: var(--radius-panel);
+  /* Dressed as the extension's card, like its toasts: cream (ink in dark),
+     4px corner, hairline. Jasper's call, 6 Oct — it was oxblood. Over the
+     same-coloured panel, the hairline and shadow carry the edge.          */
+  background: var(--background); color: var(--foreground);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, .14), inset 0 0 0 1px var(--border);
+  font-family: var(--font-body); font-size: 11px; line-height: 15px;
+  opacity: 0; transform: translateY(-2px) scale(.95); transform-origin: top right;
+  pointer-events: none; visibility: hidden;
+  transition: opacity var(--dur-slow) var(--ease-in), transform var(--dur-slow) var(--ease-in),
+              visibility 0s linear var(--dur-slow);
+}
+.sq-tip.show {
+  opacity: 1; transform: none; pointer-events: auto; visibility: visible;
+  transition: opacity var(--dur-slow) var(--ease-out), transform var(--dur-slow) var(--ease-out),
+              visibility 0s;
+}
+/* Weight carries the emphasis, not red — red has enough jobs. */
+.sq-tip b { font-weight: 700; color: var(--foreground); }
+@media (prefers-reduced-motion: reduce) { .sq-tip { transform: none; } }
+
+/* The badge is a real button here (Cancel in setup), so it gets the states
+   the shared Badge doesn't need. */
+.sq-badge { border: 0; cursor: pointer; }
+.sq-badge:hover:not(:disabled)  { background: var(--veil-hover); }
+.sq-badge:active:not(:disabled) { background: var(--veil-active); transition-duration: var(--dur-fast); }
+.sq-badge.on { background: var(--live); color: var(--live-foreground); }
+.sq-badge.on:hover:not(:disabled) {
+  background: color-mix(in oklab, var(--live) var(--hov), var(--primary));
+}
+.sq-badge.on:active:not(:disabled) {
+  background: color-mix(in oklab, var(--live) var(--prs), var(--primary));
+}
+.sq-badge:disabled { opacity: .5; cursor: default; }
+
+/* The courier: two named choices, both on show, the chosen one a red pill in
+   a grey track — the segmented control (Apple HIG, Material segmented
+   buttons, shadcn ToggleGroup type="single"). Replaced a badge that flipped
+   its own label on click, which left you unsure if BY HORSE was where you
+   were or where a click would take you (Jasper, 6 Oct). 18px tall like the
+   badge; 2px track padding, so the track's corner is the pill's plus 2
+   (nested radii). Equal segments, as HIG asks: PIGEON tracked out
+   (38.5px), plus 7px either side. Tracked .12em. Both as in the mockup
+   Jasper picked from.                                                     */
+.sq-seg {
+  display: inline-flex; flex: 0 0 auto; gap: var(--s-1); padding: var(--s-1);
+  height: 18px; box-sizing: border-box;
+  background: var(--veil); border-radius: calc(var(--radius) + var(--s-1));
+}
+.sq-seg button {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 52px; height: 14px; padding: 0; border: 0; border-radius: var(--radius);
+  background: transparent; color: var(--ink); cursor: pointer;
+  font-family: var(--font-body); font-weight: 600;
+  font-size: 8px; letter-spacing: .12em; text-transform: uppercase;
+  transition: background-color var(--dur) var(--ease), color var(--dur) var(--ease),
+              box-shadow var(--dur) var(--ease);
+}
+.sq-seg button:hover:not(:disabled)  { background: var(--veil-hover); }
+.sq-seg button:active:not(:disabled) { background: var(--veil-active); transition-duration: var(--dur-fast); }
+.sq-seg [aria-checked="true"] { background: var(--live); color: var(--live-foreground); cursor: default; }
+/* Can't be un-picked, so no hover — as the tab pair. */
+.sq-seg [aria-checked="true"]:is(:hover, :active):not(:disabled) { background: var(--live); }
+.sq-seg button:focus-visible { position: relative; z-index: 1; }
+.sq-seg button:disabled { opacity: .5; cursor: default; }
+
+/* The rank word the design folds into the line above. Kept in the DOM for
+   screen readers and for the script; kept out of the drawing. */
+.sr-only {
+  position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0;
+  border: 0; overflow: hidden; clip-path: inset(50%); white-space: nowrap;
+}
+
+/* Chrome-extension-only additions. The card floats over someone else's
+   document, so it needs positioning, a drag cursor and a failure colour
+   the shared system has no reason to carry. */
+.pip-bar {
+  position: fixed; z-index: 2147483647;
+  top: 16px; left: 50%; transform: translateX(-50%);
+  max-width: calc(100vw - 32px);
+  cursor: default;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+}
+.pip-bar .sq-status[data-status="failed"] { color: var(--live-ink); }
+
+/* Rename in place: double-click a tag and type over its label. */
+.pip-bar .sq-btn input {
+  all: unset; box-sizing: border-box;
+  width: 9ch; text-align: center;
+  font-family: var(--font-body); font-weight: 500;
+  font-size: 11px; line-height: 16px;
+  color: var(--ink); background: var(--background);   /* --primary vanished on the dark shell */
+  border-radius: var(--radius); padding: 0 2px;
+  outline: 1.5px solid var(--ring); outline-offset: 1px;
+}
+
+/* The two notices drawn over the canvas. Both used to run on a palette of
+   their own in content.js (neon green, a "--gold" that was red, 3px corners,
+   a "Placed" chip at 2.74:1). They carry .sq now, so they read the same
+   tokens as the card. Opacity is set inline by the script; only it fades. */
+.pip-toast {
+  position: fixed; z-index: 2147483647; left: 50%; bottom: 16px;
+  transform: translateX(-50%);
+  padding: var(--s-4) var(--s-6);
+  /* Dressed as the card itself — its cream (ink in dark), its corner and
+     hairline — so a toast reads as Squire talking, whatever the kind. The
+     sentence says whether it worked; colour no longer has to. Jasper's call. */
+  background: var(--background); color: var(--foreground);
+  border-radius: var(--radius-panel);
+  box-shadow: 0 2px 10px rgba(0,0,0,.09), inset 0 0 0 1px var(--border);
+  /* Set like the card's status line — Cooper, sentence case — not a caps label. */
+  font: 400 16px/22px var(--font-body);
+  max-width: min(560px, calc(100vw - 32px)); text-align: center;
+  pointer-events: none; opacity: 0;
+  transition: opacity var(--dur-slow) var(--ease-out);
+}
+
+/* The card's spot, shown only while the card is closed, for the two outcomes
+   worth surfacing without it: Placed and Fumbled. */
+.pip-outcome-toast {
+  position: fixed; z-index: 2147483647; top: 16px; left: 50%; transform: translateX(-50%);
+  display: flex; align-items: center; justify-content: center;
+  min-width: 100px; height: 28px; padding: 0 var(--s-6); border-radius: var(--radius);
+  font: 500 11px/1 var(--font-body); white-space: nowrap;
+  pointer-events: none; opacity: 0;
+  transition: opacity var(--dur-slow) var(--ease-out);
+}
+.pip-outcome-toast[data-status="pasted"] { background: var(--live);    color: var(--live-foreground); }
+.pip-outcome-toast[data-status="failed"] { background: var(--primary); color: var(--primary-foreground);
+                                           box-shadow: inset 0 0 0 1px var(--live-ink); }
+
+.pip-bar{position:static !important;transform:none !important;max-width:100% !important;}
+.sq-shot,.sq-shot *{pointer-events:none;}
