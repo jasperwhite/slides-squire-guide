@@ -317,7 +317,7 @@ details.q .a ol{padding-left:22px;margin-bottom:0;}
         <span class="kicker"><span class="sw" style="--accent:var(--purple)"></span>Figma Plugin</span>
         <span class="display">Build the deck</span>
         <p>Select your boards in Figma, press one button, and get a Google Slides deck &mdash; one slide per board. Next round, it updates the same deck.</p>
-        <span class="chips"><span class="chip">Figma Community</span><span class="chip">Set up once &middot; 5 min</span></span>
+        <span class="chips"><span class="chip">Figma Community</span><span class="chip">Set up once &middot; 2 min</span></span>
         <span class="cta">Show me how <svg viewBox="0 0 16 16"><path d="M2.5 8h11M9 3.5 13.5 8 9 12.5"/></svg></span>
       </a>
       <a class="choice" href="#chrome">
@@ -354,13 +354,13 @@ details.q .a ol{padding-left:22px;margin-bottom:0;}
       <ul>
         <li><span><b>Figma</b>, signed in with your work account.</span></li>
         <li><span>Your <b>work Google account</b>, signed in.</span></li>
-        <li><span><b>Five minutes</b>, once. After that it&rsquo;s one button.</span></li>
+        <li><span><b>Two minutes</b>, once. After that it&rsquo;s one button.</span></li>
       </ul>
     </div>
   </section>
   <nav class="wrap jump" aria-label="On this page">
     <a href="#figma-install" style="--accent:var(--yellow)"><span class="n">1</span>Add it to Figma</a>
-    <a href="#figma-connect" style="--accent:var(--green)"><span class="n">2</span>Connect Google</a>
+    <a href="#figma-connect" style="--accent:var(--green)"><span class="n">2</span>Sign in</a>
     <a href="#figma-use" style="--accent:var(--blue)"><span class="n">3</span>Use it</a>
     <a href="#figma-stuck" class="help"><span class="n">?</span>Stuck</a>
   </nav>
@@ -390,7 +390,7 @@ details.q .a ol{padding-left:22px;margin-bottom:0;}
           <p class="see">The Squire opens in your file. From now on it&rsquo;s under <b>Plugins &rarr; Slides Squire</b> in every file.</p>
           <details class="peek"><summary>Page says 404? Install it from a file instead</summary><div class="alt">
             <ol class="do">
-              <li><a href="https://drive.google.com/uc?id=1plVZAwVAGCcyw-FK46Au5nHjvrQQXMeD&amp;export=download"><b>Download the zip</b></a> (version 0.29.1), unzip it, and move the folder into <b>Documents</b> &mdash; not Downloads. Figma loads it from there every time.</li>
+              <li><a href="https://drive.google.com/uc?id=1plVZAwVAGCcyw-FK46Au5nHjvrQQXMeD&amp;export=download"><b>Download the zip</b></a> (version 0.30.0), unzip it, and move the folder into <b>Documents</b> &mdash; not Downloads. Figma loads it from there every time.</li>
               <li>In the <b>Figma desktop app</b>: <b>Plugins &rarr; Development &rarr; Import plugin from manifest&hellip;</b> and pick <code>manifest.json</code> in that folder.</li>
             </ol>
           </div></details>
@@ -408,157 +408,91 @@ details.q .a ol{padding-left:22px;margin-bottom:0;}
   <section class="wrap part" id="figma-connect" style="--accent:var(--green)">
     <div class="part-head">
       <div>
-        <span class="kicker"><span class="sw"></span>Part 2 &middot; Once &middot; 3 minutes</span>
-        <h2 class="display">Connect it to Google.</h2>
-        <p>The plugin needs a small helper script in your own Google Drive to build the deck. You make it once. It&rsquo;s yours, nobody else can see it, and every deck it makes is in your Drive.</p>
+        <span class="kicker"><span class="sw"></span>Part 2 &middot; Once &middot; 1 minute</span>
+        <h2 class="display">Sign in with Google.</h2>
+        <p>Use your work Google account. Nothing to install, nothing to copy. Every deck it makes is in your own Drive.</p>
       </div>
       <span class="tally" data-tally="figma-connect"></span>
     </div>
     <ol class="steps">
-      <li class="step" data-step="figma-4">
+      <li class="step" data-step="figma-signin">
         <span class="num">2</span>
         <div class="copy">
-          <h3>Open a blank script.</h3>
-          <p>This opens Google Apps Script in a new tab. If it asks you to sign in, use your <b>work</b> Google account.</p>
-          <div class="btnrow">
-            <a class="cta" href="https://script.google.com/home/projects/create" target="_blank" rel="noopener">Open Apps Script <svg viewBox="0 0 16 16"><path d="M5 3h8v8M13 3 3 13"/></svg></a>
-          </div>
-          <p class="see">A page called <b>Untitled project</b> with a few lines of code in it.</p>
+          <h3>Press Sign in with Google.</h3>
+          <p>In Figma: <b>Plugins &rarr; Slides Squire</b>, then the button at the bottom of the panel.</p>
+          <p class="see">Your browser opens a new tab, and the plugin shows a short code.</p>
         </div>
+        <div class="vis"><div class="stage"><div class="sq sq-shot" role="img" aria-label="The Slides Squire plugin panel: Who goes there, m'lord?"><div class="sq-panel" style="position:relative">
+  <div class="sq-head">
+    <div class="sq-head-row"><span class="sq-wordmark">Slides Squire</span>
+      <div class="sq-head-actions">
+        
+        
+      </div></div>
+    <div class="sq-kicker-row"><span class="sq-kicker">Pluginius Figmata</span><span class="sq-version">XXX</span></div>
+  </div>
+  <div class="sq-separator"></div>
+  <p class="sq-status has ">Who goes there, m'lord?</p>
+  <div class="sq-group" hidden>
+    <button class="sq-btn" data-state="active" aria-selected="true">New Deck</button>
+    <button class="sq-btn" data-state="inactive" aria-selected="false">Update Deck</button>
+  </div>
+  
+  <button class="sq-btn sq-btn--block  " 
+          style="--p:0%">Sign in with Google</button>
+</div></div></div></div>
       </li>
 
-      <li class="step" data-step="figma-5">
+      <li class="step" data-step="figma-code">
         <span class="num">3</span>
         <div class="copy">
-          <h3>Paste in the Squire&rsquo;s script.</h3>
-          <div class="btnrow">
-            <button class="ghost" type="button" data-copy-code><svg viewBox="0 0 16 16"><rect x="5" y="5" width="8.5" height="8.5" rx="1.5"/><path d="M10.5 5V3.5A1 1 0 0 0 9.5 2.5h-6a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1H5"/></svg><span class="lbl">Copy the script</span></button>
-          </div>
+          <h3>Check the two codes match.</h3>
           <ol class="do">
-            <li>Back in Apps Script, click into the code.</li>
-            <li><kbd>&#8984;</kbd> <kbd>A</kbd> to select it all, then <kbd>Delete</kbd>.</li>
-            <li><kbd>&#8984;</kbd> <kbd>V</kbd> to paste, then <kbd>&#8984;</kbd> <kbd>S</kbd> to save.</li>
+            <li>Look at the code in the browser, and the code in the plugin.</li>
+            <li>Same? Click <b>Continue with Google</b>.</li>
           </ol>
-          <details class="peek"><summary>Copy button not working? Copy it by hand</summary><pre id="code-preview"></pre></details>
-        </div>
-        <div class="vis">
-          <figure class="shot"><img src="img/editor-after.jpg" alt="The Apps Script editor with the pasted script in Code.gs" width="1100" height="207" loading="lazy"></figure>
-          <p class="cap">The code now starts with <code>/**</code> and runs to about 700 lines.</p>
-        </div>
-      </li>
-
-      <li class="step" data-step="figma-6">
-        <span class="num">4</span>
-        <div class="copy">
-          <h3>Click Deploy, then New deployment.</h3>
-          <p>The blue <b>Deploy</b> button, top right of the page.</p>
-        </div>
-        <div class="vis">
-          <figure class="shot"><img src="img/deploy-menu.jpg" alt="The Deploy menu open, showing New deployment" width="878" height="366" loading="lazy"></figure>
-        </div>
-      </li>
-
-      <li class="step" data-step="figma-7">
-        <span class="num">5</span>
-        <div class="copy">
-          <h3>Click the cog, choose Web app.</h3>
-          <p>The window opens empty. The cog is next to <b>Select type</b>, top left.</p>
-        </div>
-        <div class="vis">
-          <figure class="shot"><img src="img/deploy-type.jpg" alt="The New deployment window with the cog menu open, showing Web app" width="760" height="400" loading="lazy"></figure>
-        </div>
-      </li>
-
-      <li class="step" data-step="figma-8">
-        <span class="num">6</span>
-        <div class="copy">
-          <h3>Set two dropdowns, then Deploy.</h3>
-          <ol class="do">
-            <li><b>Execute as:</b> Me</li>
-            <li><b>Who has access:</b> Anyone</li>
-            <li>Click <b>Deploy</b>.</li>
-          </ol>
-          <p class="warn"><b>Just &ldquo;Anyone&rdquo;</b> &mdash; not &ldquo;Anyone with a Google account&rdquo;. Figma can&rsquo;t sign in to Google, so anything else blocks it. Description can be anything, or blank.</p>
-        </div>
-        <div class="vis">
-          <figure class="shot"><img src="img/deploy-configured.jpg" alt="New deployment configured: Execute as Me, Who has access Anyone" width="1100" height="873" loading="lazy"></figure>
-        </div>
-      </li>
-
-      <li class="step" data-step="figma-9">
-        <span class="num">7</span>
-        <div class="copy">
-          <h3>Let Google in.</h3>
-          <ol class="do">
-            <li>Click <b>Authorise access</b>, and pick your work account.</li>
-            <li>Google says <b>&ldquo;Google hasn&rsquo;t verified this app&rdquo;</b>. Click <b>Advanced</b> (small, bottom left).</li>
-            <li>Click <b>Go to Untitled project (unsafe)</b>.</li>
-            <li>Click <b>Allow</b>.</li>
-          </ol>
-          <p class="see">It&rsquo;s warning you about the script you made two minutes ago. That&rsquo;s fine &mdash; it&rsquo;s yours.</p>
-        </div>
-        <div class="vis">
-          <figure class="shot"><img src="img/deploy-authorise.jpg" alt="The Authorise access button" width="640" height="250" loading="lazy"></figure>
-        </div>
-      </li>
-
-      <li class="step" data-step="figma-10">
-        <span class="num">8</span>
-        <div class="copy">
-          <h3>Copy the Web app URL.</h3>
-          <p>Click <b>Copy</b> under <b>Web app URL</b>, then <b>Done</b>.</p>
-          <p class="see">The link ends in <code>/exec</code>.</p>
-          <p class="warn"><b>Keep this link to yourself.</b> Anyone with it can drop slides into your Drive.</p>
+          <p class="warn"><b>Different code?</b> Close the tab. That isn&rsquo;t your sign-in.</p>
         </div>
         <div class="vis">
           <div class="stage">
             <div class="cx" style="max-width:420px">
-              <div class="cx-bar"><b>Deployment updated</b></div>
-              <div style="padding:14px 16px 16px">
-                <div class="small" style="font-weight:600;margin-bottom:6px">Web app URL</div>
-                <div style="display:flex;gap:10px;align-items:center;min-width:0">
-                  <code style="flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;padding:8px 10px">https://script.google.com/macros/s/AKfycb&hellip;/exec</code>
-                  <span class="ring" style="color:#1A73E8;font-weight:700;padding:4px 8px">Copy</span>
-                </div>
+              <div class="cx-bar"><b>Sign in to Slides Squire</b></div>
+              <div style="padding:14px 16px 16px;display:flex;flex-direction:column;gap:10px">
+                <div class="small">Signing in to Slides Squire from Figma.</div>
+                <code style="font-size:24px;letter-spacing:.12em;text-align:center;padding:10px">K7Q-2M9</code>
+                <span class="ring" style="align-self:flex-start;color:#1A73E8;font-weight:700;padding:4px 8px">Continue with Google</span>
               </div>
             </div>
           </div>
         </div>
       </li>
 
-      <li class="step" data-step="figma-11">
-        <span class="num">9</span>
+      <li class="step" data-step="figma-allow">
+        <span class="num">4</span>
         <div class="copy">
-          <h3>Paste it into the plugin.</h3>
-          <ol class="do">
-            <li>In Figma: <b>Plugins &rarr; Slides Squire</b>.</li>
-            <li>Paste the link into the box.</li>
-            <li>Click <b>Save endpoint</b>.</li>
-          </ol>
-          <p class="see">The panel changes to <b>I await thy command, m&rsquo;lord</b>. You&rsquo;re set up, for good.</p>
+          <h3>Pick your work account, then Allow.</h3>
+          <p>The browser says <b>Signed in</b>. You can close the tab.</p>
+          <p class="see">Back in Figma, the panel switches over by itself. You&rsquo;re set up, for good.</p>
         </div>
-        <div class="vis">
-          <div class="stage"><div class="sq sq-shot" role="img" aria-label="The Slides Squire plugin panel: Where's the castle, m'lord?"><div class="sq-panel" style="position:relative">
+        <div class="vis"><div class="stage"><div class="sq sq-shot" role="img" aria-label="The Slides Squire plugin panel: Code K7Q-2M9, m'lord"><div class="sq-panel" style="position:relative">
   <div class="sq-head">
     <div class="sq-head-row"><span class="sq-wordmark">Slides Squire</span>
       <div class="sq-head-actions">
         
         <button class="sq-badge">As you were</button>
       </div></div>
-    <div class="sq-kicker-row"><span class="sq-kicker">Pluginius Figmata</span><span class="sq-version">XXIX</span></div>
+    <div class="sq-kicker-row"><span class="sq-kicker">Pluginius Figmata</span><span class="sq-version">XXX</span></div>
   </div>
   <div class="sq-separator"></div>
-  <p class="sq-status has ">Where's the castle, m'lord?</p>
+  <p class="sq-status has ">Code K7Q-2M9, m'lord</p>
   <div class="sq-group" hidden>
     <button class="sq-btn" data-state="active" aria-selected="true">New Deck</button>
     <button class="sq-btn" data-state="inactive" aria-selected="false">Update Deck</button>
   </div>
-  <input class="sq-input" tabindex="-1" value="https://script.google.com/macros/s/AKfy…/exec" 
-         placeholder="Paste the link from the Setup guide">
-  <button class="sq-btn sq-btn--block " 
-          style="--p:0%">Save endpoint</button>
-</div></div></div>
-        </div>
+  
+  <button class="sq-btn sq-btn--block  waiting" 
+          style="--p:0%">Waiting at the gate…</button>
+</div></div></div><p class="cap">While you&rsquo;re in the browser, the plugin waits.</p></div>
       </li>
     </ol>
   </section>
@@ -592,7 +526,7 @@ details.q .a ol{padding-left:22px;margin-bottom:0;}
         <div class="sq-seg"><button aria-checked="true" role="radio">Horse</button><button aria-checked="false" role="radio">Pigeon</button></div>
         <button class="sq-iconbtn"><svg viewBox="-0.75 -0.75 13.5 13.5" fill="none" stroke="currentColor" stroke-linecap="round" aria-hidden="true"><g transform="rotate(-45 6 6)"><path d="M4.5 8.5H3.5A3 3 0 0 1 3.5 2.5H4.5M7.5 2.5H8.5A3 3 0 0 1 8.5 8.5H7.5M3.5 5.5H8.5"/></g></svg></button>
       </div></div>
-    <div class="sq-kicker-row"><span class="sq-kicker">Pluginius Figmata</span><span class="sq-version">XXIX</span></div>
+    <div class="sq-kicker-row"><span class="sq-kicker">Pluginius Figmata</span><span class="sq-version">XXX</span></div>
   </div>
   <div class="sq-separator"></div>
   <p class="sq-status has ">24 boards, m'lord</p>
@@ -602,7 +536,7 @@ details.q .a ol{padding-left:22px;margin-bottom:0;}
   </div>
   <input class="sq-input" tabindex="-1" value="EDG0000 R1 — offer boards" 
          placeholder="Name the deck...">
-  <button class="sq-btn sq-btn--block " 
+  <button class="sq-btn sq-btn--block  " 
           style="--p:0%">At once, m'lord</button>
 </div></div></div></div>
       </li>
@@ -619,7 +553,7 @@ details.q .a ol{padding-left:22px;margin-bottom:0;}
         <div class="sq-seg"><button aria-checked="true" role="radio">Horse</button><button aria-checked="false" role="radio">Pigeon</button></div>
         <button class="sq-iconbtn"><svg viewBox="-0.75 -0.75 13.5 13.5" fill="none" stroke="currentColor" stroke-linecap="round" aria-hidden="true"><g transform="rotate(-45 6 6)"><path d="M4.5 8.5H3.5A3 3 0 0 1 3.5 2.5H4.5M7.5 2.5H8.5A3 3 0 0 1 8.5 8.5H7.5M3.5 5.5H8.5"/></g></svg></button>
       </div></div>
-    <div class="sq-kicker-row"><span class="sq-kicker">Pluginius Figmata</span><span class="sq-version">XXIX</span></div>
+    <div class="sq-kicker-row"><span class="sq-kicker">Pluginius Figmata</span><span class="sq-version">XXX</span></div>
   </div>
   <div class="sq-separator"></div>
   <p class="sq-status has ">Hard upon the road · 9 of 24</p>
@@ -629,7 +563,7 @@ details.q .a ol{padding-left:22px;margin-bottom:0;}
   </div>
   <input class="sq-input" tabindex="-1" value="EDG0000 R1 — offer boards" 
          placeholder="Name the deck...">
-  <button class="sq-btn sq-btn--block working" 
+  <button class="sq-btn sq-btn--block working " 
           style="--p:38%">On the road…</button>
 </div></div></div></div>
       </li>
@@ -647,7 +581,7 @@ details.q .a ol{padding-left:22px;margin-bottom:0;}
         
         <button class="sq-iconbtn"><svg viewBox="-0.75 -0.75 13.5 13.5" fill="none" stroke="currentColor" stroke-linecap="round" aria-hidden="true"><g transform="rotate(-45 6 6)"><path d="M4.5 8.5H3.5A3 3 0 0 1 3.5 2.5H4.5M7.5 2.5H8.5A3 3 0 0 1 8.5 8.5H7.5M3.5 5.5H8.5"/></g></svg></button>
       </div></div>
-    <div class="sq-kicker-row"><span class="sq-kicker">Pluginius Figmata</span><span class="sq-version">XXIX</span></div>
+    <div class="sq-kicker-row"><span class="sq-kicker">Pluginius Figmata</span><span class="sq-version">XXX</span></div>
   </div>
   <div class="sq-separator"></div>
   <p class="sq-status has ">Delivered, m'lord.</p>
@@ -657,7 +591,7 @@ details.q .a ol{padding-left:22px;margin-bottom:0;}
   </div>
   <input class="sq-input" tabindex="-1" value="docs.google.com/presentation/d/…" disabled
          placeholder="Name the deck...">
-  <button class="sq-btn sq-btn--block " 
+  <button class="sq-btn sq-btn--block  " 
           style="--p:0%">Inspect the goods, m'lord</button>
 </div></div></div></div>
       </li>
@@ -678,7 +612,7 @@ details.q .a ol{padding-left:22px;margin-bottom:0;}
       </div>
       <div class="tip">
         <h3>Your own slides are safe</h3>
-        <p>Title cards and dividers you add by hand are never touched, and nothing is ever deleted. Older deck? Click <b>Update Deck</b> and paste its link.</p>
+        <p>Title cards and dividers you add by hand are never touched, and nothing is ever deleted. Older deck? Click <b>Update Deck</b> and paste its link &mdash; you just need edit access to it.</p>
       </div>
     </div>
   </section>
@@ -693,12 +627,23 @@ details.q .a ol{padding-left:22px;margin-bottom:0;}
       </div>
     </div>
     <div class="qs">
+      <details class="q"><summary>I had the old version, with the script</summary><div class="a">
+        <p>Figma updates the plugin for you. Open it and press <b>Sign in with Google</b> &mdash; that&rsquo;s the whole setup now. Your old script isn&rsquo;t used any more, so you can delete it from <b>script.google.com</b>. Decks you made with it still update.</p>
+      </div></details>
+      <details class="q"><summary>It says &ldquo;Sign in with your H+Co Google account&rdquo;</summary><div class="a">
+        <p>You picked a personal account. Press the button again and pick your work one.</p>
+      </div></details>
+      <details class="q"><summary>It says &ldquo;The summons lapsed&rdquo; or &ldquo;Thy pass has lapsed&rdquo;</summary><div class="a">
+        <p>The sign-in ran out &mdash; a code lasts ten minutes. Press <b>Sign in with Google</b> and go again. Your deck link and settings are kept.</p>
+      </div></details>
       <details class="q"><summary>It says &ldquo;The bridge is drawn&rdquo;</summary><div class="a">
-        <p>The plugin can&rsquo;t reach your script. Nearly always step 6: <b>Who has access</b> isn&rsquo;t set to <b>Anyone</b>.</p>
-        <p>Test it: paste your <code>/exec</code> link into Chrome. A short line of plain text means it&rsquo;s fine. A Google sign-in page means redo step 6, choosing <b>Anyone</b>. The chain icon top right of the panel shows the link the plugin saved.</p>
+        <p>Nothing answered. Check your internet and press the button again &mdash; the deck keeps what it already has, and only the rest is sent.</p>
       </div></details>
       <details class="q"><summary>It says &ldquo;Only 86 of 157 made it&rdquo;</summary><div class="a">
         <p>Not a failure &mdash; those 86 are in the deck. Press the button again. It works out what&rsquo;s missing and sends the rest.</p>
+      </div></details>
+      <details class="q"><summary>It won&rsquo;t take my deck link</summary><div class="a">
+        <p>Check it&rsquo;s a Google Slides link, and that you can edit that deck. A view-only deck can&rsquo;t be updated &mdash; ask the owner for edit access.</p>
       </div></details>
       <details class="q"><summary>A board came out black</summary><div class="a">
         <p>The frame has no background. Give the frame a fill colour in Figma and sync again.</p>
@@ -707,12 +652,12 @@ details.q .a ol{padding-left:22px;margin-bottom:0;}
         <p>Figma only shows the plugin to people signed in with a work account. Sign in to Figma, then open the link again. Still a 404? Use <b>Install it from a file</b>, under step 1.</p>
       </div></details>
       <details class="q"><summary>I installed it from a file and it vanished</summary><div class="a">
-        <p>Its folder was moved or deleted. Put it back in Documents (download it again if you need to) and import <code>manifest.json</code> again. Your Google setup is still fine.</p>
+        <p>Its folder was moved or deleted. Put it back in Documents (download it again if you need to) and import <code>manifest.json</code> again. Sign in again if it asks.</p>
       </div></details>
       <details class="q"><summary>Jasper says there&rsquo;s a new version</summary><div class="a">
         <ol>
-          <li><b>From Figma Community:</b> nothing to do, Figma updates it for you. <b>From a file:</b> download it again and swap the new folder in for the old one, in the same spot in Documents.</li>
-          <li><b>Only if he says the script changed too:</b> copy the script again and paste over the old one (step 3). Then <b>Deploy &rarr; Manage deployments</b>, click the pencil, set <b>Version</b> to <b>New version</b>, and click <b>Deploy</b>. Your link stays the same.</li>
+          <li><b>From Figma Community:</b> nothing to do, Figma updates it for you.</li>
+          <li><b>From a file:</b> download it again and swap the new folder in for the old one, in the same spot in Documents.</li>
         </ol>
       </div></details>
     </div>
@@ -1016,13 +961,12 @@ details.q .a ol{padding-left:22px;margin-bottom:0;}
   <div class="wrap">
     <div>
       <div class="display">Still stuck?</div>
-      <p class="small">Plugin 0.29.1 &middot; Extension 2.29.0</p>
+      <p class="small">Plugin 0.30.0 &middot; Extension 2.29.0</p>
     </div>
     <a class="ghost ask" href="https://slack.com/app_redirect?channel=U0B2UTWH01Y" target="_blank" rel="noopener">Message Jasper on Slack <svg viewBox="0 0 16 16"><path d="M2.5 8h11M9 3.5 13.5 8 9 12.5"/></svg></a>
   </div>
 </footer>
 
-<script type="application/json" id="code-gs">"/**\n * Board Baron — endpoint. (Plugin renamed from \"Sync to Slides\"; this file's\n * own service id below is unchanged on purpose — see the note by VERSION.)\n *\n * Receives batches of frame PNGs from the Figma plugin and builds a Google\n * Slides deck. Lives in Apps Script rather than a hosted service because it\n * needs no Google Cloud project, no billing account and no admin — which makes\n * it deployable by anyone, on a locked-down domain or a personal account.\n *\n * Deploy: Deploy > New deployment > Web app\n *   Execute as:  Me\n *   Who has access: Anyone\n *\n * A Figma plugin iframe is a null-origin sandbox, so the caller carries no\n * Google session — \"execute as user accessing\" cannot work here. The shared\n * secret below is what stops a stray request writing into the Drive of\n * whoever deployed this.\n *\n * Script properties (Project Settings > Script properties) — both optional:\n *   SECRET              a second lock. Set it and append it to the deployment\n *                       URL as ?k=<secret>. Unset, the unguessable /exec URL is\n *                       the only thing standing in front of the endpoint, which\n *                       is enough when the blast radius is one person's Drive\n *   FOLDER_ID           Drive folder new decks are moved into\n *\n * ONE DEPLOYMENT PER PERSON. A web app runs as whoever deployed it, so every\n * deck it builds is created and owned by that account. Sharing one deployment\n * across a team therefore piles everybody's decks into one Drive, and the\n * hand-over that would undo it only works between two accounts in the same\n * organisation — never to a personal address, and some domains forbid it\n * outright. Rather than depend on a domain setting nobody can read, each\n * person deploys their own copy from this file and pastes their own URL into\n * the plugin. Then a deck is theirs because their account made it, which needs\n * no permission from anyone.\n *\n * The cost is one five-minute setup each, once. It needs no Google Cloud\n * project and no admin — Apps Script provisions its own behind the scenes.\n */\n\n// Breathing room around artwork that isn't already the page's shape, as a\n// fraction of the page. 0 would let a banner touch the slide edges.\nvar MARGIN = 0.04;\n\n// Bumped whenever this file changes in a way the plugin or a deploy cares about.\n// Visiting the /exec URL in a browser answers with it, which is the only way to\n// tell from outside which version a deployment is actually running.\nvar VERSION = '0.17.0';\n\nfunction doGet() {\n  // 'sync-to-slides' is a wire identifier, not the display name — it's what\n  // the plugin's health check matches against every deployed endpoint,\n  // including ones out in the world already. Changing it would be a breaking\n  // change for anyone who deployed before the rename, for a string nobody\n  // sees. Left alone on purpose.\n  return json({ ok: true, service: 'sync-to-slides', version: VERSION });\n}\n\nfunction doPost(e) {\n  try {\n    var body = JSON.parse(e.postData.contents);\n\n    // Optional. The /exec URL already contains ~57 unguessable characters, and\n    // this endpoint is one person's own, so the worst an unwanted caller could\n    // do is put junk decks in that one Drive. Setting SECRET adds a second lock\n    // for anyone who wants it; leaving it unset removes two setup steps and the\n    // typo that used to come with them.\n    var expected = PropertiesService.getScriptProperties().getProperty('SECRET');\n    if (expected) {\n      var supplied = (e && e.parameter && e.parameter.k) || body.secret;\n      if (supplied !== expected) {\n        return json({ ok: false, error: 'Bad secret' });\n      }\n    }\n\n    var items = body.items || [];\n    var probe = body.probe || null;\n    // An order-only post is legitimate: if every frame in a sync turned out to\n    // be unchanged there is nothing to send, but the deck may still need\n    // putting into the order the frames sit in on the canvas.\n    if (!items.length && !probe && !(body.order && body.order.length)) {\n      return json({ ok: false, error: 'No frames in request' });\n    }\n    if (probe && !body.deckId) return json({ ok: false, error: 'Probe needs a deck' });\n\n    var pres;\n    var created = false;\n\n    // A create has to be idempotent, because the plugin cannot tell a post\n    // that failed from one that worked and lost its reply.\n    //\n    // What used to happen on a big first sync: post one creates the deck,\n    // builds its slides, runs long, and the reply never arrives. The plugin\n    // retries — correctly dropping `fresh` so it will not double-write — but\n    // it still has no deckId, because the only message carrying it was the\n    // reply that went missing. No deckId meant create, so the retry made a\n    // SECOND deck and every later post appended to that one. The first deck\n    // was left orphaned holding the opening batch. Jasper hit this on a\n    // 129-board rollout, 6 Oct.\n    //\n    // The run's own syncId is the cure: it is the same across every post of a\n    // sync, including the retries, so the first create records which deck it\n    // made under that id and anything arriving later finds it instead of\n    // making another. Written the moment the deck exists, before any of the\n    // slow work, so a post killed at the six-minute limit still leaves it.\n    var newCache = CacheService.getScriptCache();\n    var newKey = body.syncId ? 'new:' + body.syncId : null;\n    if (!body.deckId && newKey) {\n      var madeEarlier = null;\n      try { madeEarlier = newCache.get(newKey); } catch (lookupErr) {}\n      if (madeEarlier) body.deckId = madeEarlier;\n    }\n\n    if (body.deckId) {\n      // A deck link that has been trashed, or belongs to someone who never\n      // shared it, throws a Google-worded exception the designer can do\n      // nothing with. Say the one thing that is actionable instead.\n      try {\n        pres = SlidesApp.openById(body.deckId);\n      } catch (openErr) {\n        return json({ ok: false, error: 'Deck not open to you' });\n      }\n    } else {\n      pres = SlidesApp.create(body.deckName || 'Figma sync');\n      created = true;\n      if (newKey) {\n        // Six hours is the cache's ceiling and far longer than any sync, so\n        // the mapping outlives even a run that retries for two minutes.\n        try { newCache.put(newKey, pres.getId(), 21600); } catch (stampErr) {}\n      }\n    }\n\n    // On an update, match incoming frames to the slides already in the deck so\n    // the slide survives and only its artwork changes. That is what keeps a\n    // client's comments attached: a comment anchors to the slide, and\n    // replace() leaves the slide and the image object alone.\n    //\n    // Frames are matched on their Figma node id, stamped into the image's alt\n    // text description. The name is only a fallback. Names were the original\n    // key and they break the moment anyone renames a frame: the rename looks\n    // like a brand new frame, so it lands as an extra slide at the end and the\n    // commented-on original is left behind showing stale artwork.\n    // Entries rather than bare images, because both indexes can point at the\n    // same slide and a slide must only be claimed once. The used flag lives on\n    // our own object — never set a property on a live Apps Script object.\n    //\n    // body.fresh means this sync created the deck, so every slide in it was\n    // written by this same run and nothing can predate it. Scanning is then\n    // pure waste, and expensive waste: it reads every slide and every image on\n    // every post, so a 157-frame run in twelve posts re-read the deck twelve\n    // times, each pass longer than the last. That is what made big decks fail\n    // — the work grew with the deck, not the batch, until a post ran past the\n    // six-minute limit and came back as a CORS error the plugin could only\n    // report as \"Cannot reach endpoint\".\n    // Grab the id up front: saveAndClose() invalidates the object, so reading\n    // it afterwards throws.\n    var deckId = pres.getId();\n    var W = pres.getPageWidth();\n    var H = pres.getPageHeight();\n\n    // Matching an incoming frame to the slide that already holds it means\n    // knowing which slide carries which Figma node id, and the only way to\n    // learn that is to read every slide's image and its alt text — two API\n    // calls a slide. Done on every post, that is the cost that grew with the\n    // deck rather than the batch, and it is what killed long runs: thirteen\n    // posts into a 157-slide deck read the whole deck thirteen times, four\n    // thousand calls, until one post ran past the six-minute limit and came\n    // back as a CORS error the plugin could only report as \"Cannot reach\n    // endpoint\".\n    //\n    // So read it once per sync and keep the answer. Every post of one run\n    // carries the same syncId; the first builds a map of key -> slide position\n    // and caches it, and the rest read it back and index straight into\n    // getSlides(). Positions stay good for the life of a sync because new\n    // slides are only ever appended and a replaced slide never moves.\n    // Reordering does move them, but that runs last, on the final post.\n    //\n    // body.fresh means this sync created the deck, so nothing in it predates\n    // this run and there is nothing to match against at all.\n    var cache = CacheService.getScriptCache();\n    var cacheKey = body.syncId ? 'idx:' + deckId + ':' + body.syncId : null;\n    var map = null;\n    var slides = null;\n\n    if (!created && !body.fresh) {\n      if (cacheKey) {\n        var cached = cacheRead(cache, cacheKey);\n        if (cached) {\n          try { map = JSON.parse(cached); } catch (parseErr) { map = null; }\n        }\n      }\n      if (!map) {\n        slides = pres.getSlides();\n        map = buildIndex(slides);\n      }\n    }\n    if (!map) map = { byId: {}, byName: {}, claimed: {}, sig: {} };\n\n    // A probe asks what the deck already holds, so the plugin can leave those\n    // frames out of the sync entirely — no upload, no server work, nothing.\n    // This is worth far more than any saving inside a post: on a second round\n    // where a dozen frames changed, the other hundred and forty cost nothing.\n    //\n    // The comparison is made here rather than in the plugin because it is the\n    // same comparison the sync itself makes, and two copies of it would drift.\n    if (probe) {\n      var have = [];\n      for (var q = 0; q < probe.length; q++) {\n        var pr = probe[q];\n        var at = pr.id !== undefined && map.byId[pr.id] !== undefined\n          ? map.byId[pr.id]\n          : map.byName[pr.name];\n        if (at === undefined) continue;\n        if (map.sig[at] === signature(fit(pr.pxW, pr.pxH, W, H), pr)) have.push(pr.id);\n      }\n      // Leave the index behind for the posts that follow, so the scan this\n      // probe just paid for is not paid for again.\n      if (cacheKey) {\n        try { cacheWrite(cache, cacheKey, JSON.stringify(map)); } catch (probeCacheErr) {}\n      }\n      return json({ ok: true, deckId: deckId, have: have });\n    }\n\n    // A slide must only be claimed once, and the claim has to hold across the\n    // posts of a sync as well as within one — so it travels in the map.\n    // `claimed` records which key took a slide, not merely that one did. A post\n    // that built its slides and then lost its reply is sent again under the same\n    // syncId, and the cache it left behind would otherwise report every slide as\n    // taken — so the retry would append a second copy of everything it had\n    // already placed. Keyed, the retry recognises its own work and replaces it.\n    // Slides this request has already taken. Two frames sharing a name inside\n    // one post must not both land on the same slide — the second is a new frame\n    // and gets a new slide. Only a slide claimed by an *earlier* post is open to\n    // being re-claimed, and then only by the key that took it.\n    var takenNow = {};\n\n    function claim(which, key) {\n      if (!key) return null;\n      var pos = map[which][key];\n      if (pos === undefined || takenNow[pos]) return null;\n      var held = map.claimed[pos];\n      if (held && held !== which + ':' + key) return null;\n      if (!slides) slides = pres.getSlides();\n      var slide = slides[pos];\n      if (!slide) return null;\n      var imgs = slide.getImages();\n      if (!imgs.length) return null;\n      map.claimed[pos] = which + ':' + key;\n      takenNow[pos] = 1;\n      return { img: imgs[0], pos: pos, sig: (map.sig && map.sig[pos]) || '' };\n    }\n\n    var replaced = 0;\n    var added = 0;\n\n    for (var i = 0; i < items.length; i++) {\n      var item = items[i];\n      // The wire field is still called `png` for compatibility, but the plugin\n      // now sends JPEG for speed. Sniff the magic bytes rather than trust the\n      // name, so either format works and the two halves can be deployed\n      // independently. JPEG starts FF D8, PNG starts 89 50 (signed: -1/-40,\n      // -119/80).\n      var raw = Utilities.base64Decode(item.png);\n      var isJpeg = raw.length > 1 && raw[0] === -1 && raw[1] === -40;\n      var blob = Utilities.newBlob(\n        raw,\n        isJpeg ? 'image/jpeg' : 'image/png',\n        (item.name || 'frame') + (isJpeg ? '.jpg' : '.png')\n      );\n\n      var match = claim('byId', item.id) || claim('byName', item.name);\n\n      // The plugin measures the decoded JPEG before it sends it, so the image's\n      // pixel size is known before the image exists on the page. That is what\n      // makes the two savings below possible: a new image can be placed in the\n      // same call that creates it, and an unchanged one need not be placed at\n      // all. Asking the image itself costs a round trip per frame, and on a long\n      // post the round trips are nearly all of the time spent.\n      var box = item.pxW && item.pxH ? fit(item.pxW, item.pxH, W, H) : null;\n      var want = box ? signature(box, item) : null;\n      var img;\n\n      if (match) {\n        // Keeps the slide, so anything anchored to it survives.\n        // replace() does NOT keep the image's alt text — it comes back with no\n        // title and no description. So the stamp below is not a refresh, it is\n        // the only thing standing between this slide and being unmatchable on\n        // the next sync. 0.13.0 skipped it when nothing appeared to have\n        // changed and cost a 157-slide deck its ids; the sync after appended a\n        // duplicate of every frame it could no longer recognise. Never skip it.\n        //\n        // Nor is there anything to gain: SlidesApp batches these setters, so\n        // they are not a round trip each. The way to make a sync fast is to not\n        // send the frame at all, which is what the probe above is for.\n        img = match.img.replace(blob);\n        replaced++;\n      } else if (box) {\n        img = appendBlank(pres)\n                  .insertImage(blob, box.left, box.top, box.width, box.height);\n        added++;\n      } else {\n        img = appendBlank(pres).insertImage(blob);\n        added++;\n      }\n\n      if (!box) {\n        // A plugin old enough to send no pixel sizes. Measure the image, which\n        // is the round trip per frame this version exists to avoid, and place it\n        // the long way.\n        box = fit(img.getWidth() || 1, img.getHeight() || 1, W, H);\n        want = signature(box, item);\n        img.setWidth(box.width).setHeight(box.height)\n           .setLeft(box.left).setTop(box.top);\n      } else if (match) {\n        // A replaced image keeps the old one's box, which is only the right box\n        // if nothing about the frame changed. Setting it costs nothing.\n        img.setWidth(box.width).setHeight(box.height)\n           .setLeft(box.left).setTop(box.top);\n      }\n\n      // Title is for humans reading the alt text; description carries the key\n      // the next sync matches on, and after it the placement the next sync\n      // compares against. Re-stamped whenever either has changed, so a deck\n      // built before ids existed picks them up on its first sync under this\n      // version.\n      img.setTitle(item.name || '');\n      // The second line is the geometry and the image hash — everything the\n      // next sync needs to tell whether this slide is already correct.\n      img.setDescription(STAMP + (item.id || '') + '\\n' +\n                         geomOf(box) + '|' + (item.hash || ''));\n\n      if (match) {\n        map.sig[match.pos] = want;\n      } else if (map.count !== undefined) {\n        // A slide this post appended goes into the index as well. Without it the\n        // cache handed to the next post describes a deck that is already out of\n        // date — and a retry of this post, finding no record of the slides it\n        // built, would append a second copy of every one of them.\n        var np = map.count++;\n        if (item.id) map.byId[item.id] = np;\n        if (item.name && map.byName[item.name] === undefined) map.byName[item.name] = np;\n        map.claimed[np] = item.id ? 'byId:' + item.id : 'byName:' + item.name;\n        takenNow[np] = 1;\n        map.sig[np] = want;\n      }\n    }\n\n    // Put the deck into the order the frames arrived in. Without this, a frame\n    // moved in Figma keeps its old slide position, because a matched slide is\n    // replaced where it sits and a new one is only ever appended.\n    //\n    // Only the slides in this sync are rearranged, and only across the\n    // positions they already occupy — so syncing a handful of frames into a\n    // big deck fixes their order without dragging them to the front.\n    if (body.order && body.order.length) {\n      reorder(pres, body.order, map);\n      // reorder() has just invalidated every position in the index, and the\n      // index is about to be cached for the rest of this sync. A retry of this\n      // post is routine — a lost reply looks exactly like a failure, and the\n      // plugin resends under the same syncId — and that retry would read\n      // positions describing the deck as it stood before the move, then write\n      // every frame onto the slide next door. Comments stay where they are, so\n      // what you get is a deck where every client comment quietly points at\n      // the wrong artwork. Measured: a resend put 005 Echo onto the slide\n      // carrying two comments about 004 Delta.\n      //\n      // The order post is the last of a sync, so there is nothing left to\n      // cache for. Drop it and let any retry read the deck as it really is.\n      if (cacheKey) {\n        try { cache.remove(cacheKey); } catch (orderCacheErr) {}\n        cacheKey = null;\n      }\n    }\n\n    // A new presentation arrives with one title slide; drop it once there is\n    // real content to replace it.\n    if (created && added > 0) {\n      var all = pres.getSlides();\n      if (all.length > added) all[0].remove();\n    }\n\n    // Hand the map to the next post of this sync, claims and all, so it never\n    // has to read the deck again. Half an hour outlives any sync; a map too\n    // big to store just means the next post rebuilds it, which is what this\n    // did before.\n    if (cacheKey && !body.fresh) {\n      try {\n        cacheWrite(cache, cacheKey, JSON.stringify(map));\n      } catch (cacheErr) {\n        // Caching is an optimisation — never fail the sync over it.\n      }\n    }\n\n    pres.saveAndClose();\n\n    // The deck already belongs to whoever deployed this, which is whoever is\n    // running the plugin. Nothing to hand over.\n    if (created) {\n      var folderId = PropertiesService.getScriptProperties().getProperty('FOLDER_ID');\n      if (folderId) {\n        try {\n          DriveApp.getFileById(deckId).moveTo(DriveApp.getFolderById(folderId));\n        } catch (moveErr) {\n          // Filing is a convenience — never fail the sync over it.\n        }\n      }\n    }\n\n    return json({\n      ok: true,\n      deckId: deckId,\n      url: 'https://docs.google.com/presentation/d/' + deckId + '/edit',\n      added: added,\n      replaced: replaced\n    });\n  } catch (err) {\n    return json({ ok: false, error: String(err && err.message ? err.message : err) });\n  }\n}\n\n// Prefix on the alt-text description, so a description someone typed by hand is\n// never mistaken for a key.\nvar STAMP = 'figma:';\n\nfunction stampedId(img) {\n  var d = img.getDescription ? (img.getDescription() || '') : '';\n  return idFromDescription(d) || legacyId(img);\n}\n\n// A deck built by the Firebase predecessor (figma-sync-to-slides.appspot.com)\n// carries no alt text at all. It put the node id in the Slides object id\n// instead, as `_img_<nodeId>-<batchNonce>`, e.g. `_img_707:120279-e6k4eri6n`.\n// Reading that back is the whole reason an old deck can be re-synced in place:\n// without it every frame looks new, and a sync appends a second copy of the\n// deck below the first, stranding every comment on the half nobody reads.\n// Only needed once — replace() is followed by setDescription(), so the slide\n// carries a proper stamp from the next sync onward.\nvar LEGACY_ID = /^_img_(\\d+:\\d+)-/;\n\n// ...and a slide that was pasted in from another deck keeps the picture but\n// loses that object id, so the last resort is the upload URL the predecessor\n// inserted from, which still names the node (colon percent-encoded):\n//   .../figma-sync-to-slides.appspot.com/707%3A119295-e6k4eri6n.png?...\n// Worth the third lookup: those pasted slides are the ones carrying embedded\n// video and hand-written tags, which only survive a replace in place.\nvar LEGACY_SRC = /\\/(\\d+)(?::|%3[Aa])(\\d+)-[^\\/?]*\\.(?:png|jpe?g)(?:\\?|$)/;\n\nfunction legacyId(img) {\n  var m;\n  if (img.getObjectId) {\n    m = LEGACY_ID.exec(img.getObjectId() || '');\n    if (m) return m[1];\n  }\n  if (img.getSourceUrl) {\n    // getSourceUrl() returns null for an image inserted as a blob.\n    m = LEGACY_SRC.exec(img.getSourceUrl() || '');\n    if (m) return m[1] + ':' + m[2];\n  }\n  return '';\n}\n\n// The description is the stamp, the node id, then optionally a newline and the\n// geometry the last sync placed the image at. Splitting is done on the string\n// rather than the image so the index can read it once and get both halves.\nfunction idFromDescription(d) {\n  if (d.indexOf(STAMP) !== 0) return '';\n  var rest = d.substring(STAMP.length);\n  var nl = rest.indexOf('\\n');\n  return nl === -1 ? rest : rest.substring(0, nl);\n}\n\nfunction geomFromDescription(d) {\n  if (d.indexOf(STAMP) !== 0) return '';\n  var rest = d.substring(STAMP.length);\n  var nl = rest.indexOf('\\n');\n  return nl === -1 ? '' : rest.substring(nl + 1);\n}\n\n// Read every slide once and note which keys sit at which position. The only\n// expensive thing this endpoint does, so it happens once per sync and the\n// result is cached for the posts that follow.\n// A cache entry holds at most 100KB, and the index of a long deck is bigger\n// than that — the placements are most of it. Rather than give up on the decks\n// that need the cache most, it is written in pieces under a header key saying\n// how many. A piece that has expired on its own makes the whole entry a miss,\n// which is safe: the next post rebuilds the index, exactly as it did before any\n// of this existed.\nvar CACHE_CHUNK = 90000;\nvar CACHE_MAX_CHUNKS = 20;\n\nfunction cacheWrite(cache, key, str) {\n  var n = Math.ceil(str.length / CACHE_CHUNK) || 1;\n  if (n > CACHE_MAX_CHUNKS) return;\n  var parts = {};\n  parts[key] = String(n);\n  for (var i = 0; i < n; i++) {\n    parts[key + ':' + i] = str.substring(i * CACHE_CHUNK, (i + 1) * CACHE_CHUNK);\n  }\n  cache.putAll(parts, 1800);\n}\n\nfunction cacheRead(cache, key) {\n  var n = parseInt(cache.get(key), 10);\n  if (!n || n > CACHE_MAX_CHUNKS) return null;\n  var want = [];\n  for (var i = 0; i < n; i++) want.push(key + ':' + i);\n  var got = cache.getAll(want) || {};\n  var out = '';\n  for (var j = 0; j < n; j++) {\n    var part = got[key + ':' + j];\n    if (part === undefined || part === null) return null;\n    out += part;\n  }\n  return out;\n}\n\n\n// A deck built by pasting slides in from another deck carries that deck's\n// master, and a pasted master need not contain Google's BLANK layout — the\n// EDG2455 deck does not. appendSlide(PredefinedLayout.BLANK) then throws\n// \"The predefined layout (BLANK) is not present in the current master\", and\n// because an unmatched frame is usually early in canvas order it throws before\n// a single replace has run: the whole post dies and nothing is written at all.\n// A deck that cannot take a new slide should still get its existing slides\n// updated.\n//\n// So ask the deck what it actually has rather than naming a layout and hoping.\nfunction appendBlank(pres) {\n  if (blankLayout === undefined) blankLayout = resolveBlank(pres);\n  if (blankLayout) {\n    try { return strip(pres.appendSlide(blankLayout)); } catch (_) {}\n  }\n  // Fallback that cannot fail on layout grounds: clone a slide the deck\n  // already has and empty it. The clone lands directly after its original, so\n  // it has to be moved to the end. It inherits the deck's own background,\n  // which is the right look for a deck full of full-bleed boards anyway.\n  var slides = pres.getSlides();\n  if (slides.length) {\n    var copy = slides[slides.length - 1].duplicate();\n    copy.move(pres.getSlides().length - 1);\n    return strip(copy);\n  }\n  // Empty deck. Nothing to clone and no layout to name, so take whatever\n  // appendSlide() defaults to.\n  return strip(pres.appendSlide());\n}\n\n// Placeholders arrive empty but they print, and they sit over the artwork.\n// A cloned slide arrives with the original's contents, which matters more.\nfunction strip(slide) {\n  try {\n    var els = slide.getPageElements();\n    for (var i = 0; i < els.length; i++) els[i].remove();\n  } catch (_) {}\n  try { slide.getNotesPage().getSpeakerNotesShape().setText(''); } catch (_) {}\n  return slide;\n}\n\n// One post only ever touches one deck, so this is resolved once per execution.\n// null is a real answer here (\"no usable layout\"), so it caches as one.\nvar blankLayout;\n\n// \"The current master\" is the master of the slides already in the deck — that\n// is what appendSlide builds on, and a layout from any other master is\n// rejected the same way the missing BLANK was. A slide can also report no\n// layout at all, so walk back until one does.\nfunction resolveBlank(pres) {\n  try {\n    var slides = pres.getSlides();\n    for (var i = slides.length - 1; i >= 0; i--) {\n      var lay = null;\n      try { lay = slides[i].getLayout(); } catch (_) {}\n      if (!lay) continue;\n      var layouts = lay.getMaster().getLayouts();\n      for (var j = 0; j < layouts.length; j++) {\n        var name = '';\n        try { name = layouts[j].getLayoutName() || ''; } catch (_) {}\n        if (/blank/i.test(name)) return layouts[j];\n      }\n      // No blank layout in this master. The slide's own layout is at least\n      // guaranteed to be in it; its placeholders come off in strip().\n      return lay;\n    }\n  } catch (_) {}\n  return null;\n}\n\n// Where a frame of this pixel size sits on the page. Artwork is never cropped\n// — a client is approving it. A frame already cut to the page ratio goes edge\n// to edge; anything else is fitted inside a small margin so mixed asset shapes\n// sit consistently on the page instead of one banner touching the edges and\n// the next not.\nfunction fit(pxW, pxH, W, H) {\n  pxW = pxW || 1;\n  pxH = pxH || 1;\n  var sameShape = Math.abs(pxW / pxH - W / H) / (W / H) < 0.02;\n  var availW = sameShape ? W : W * (1 - 2 * MARGIN);\n  var availH = sameShape ? H : H * (1 - 2 * MARGIN);\n  var scale = Math.min(availW / pxW, availH / pxH);\n  var w = pxW * scale;\n  var h = pxH * scale;\n  return { width: w, height: h, left: (W - w) / 2, top: (H - h) / 2 };\n}\n\n// Tenths of a point is finer than anyone can see and keeps the string short,\n// which matters because every one of these is cached.\nfunction geomOf(box) {\n  return Math.round(box.left * 10) + ',' + Math.round(box.top * 10) + ',' +\n         Math.round(box.width * 10) + ',' + Math.round(box.height * 10);\n}\n\n// Everything about a frame that a sync would write to its slide: where the\n// image goes, what the image is, and what it is called. Two frames with the\n// same signature are the same slide, so there is nothing to do — which is what\n// both the probe and the per-frame skip are asking.\n//\n// The hash is of the exported image bytes, computed by the plugin. Without one\n// this degrades to matching on placement and name, which is what a plugin older\n// than this version sends.\nfunction signature(box, item) {\n  return geomOf(box) + '|' + (item.hash || '') + '|' + (item.name || '');\n}\n\nfunction buildIndex(slides) {\n  var map = { byId: {}, byName: {}, claimed: {}, sig: {}, count: slides.length };\n  for (var s = 0; s < slides.length; s++) {\n    var images = slides[s].getImages();\n    if (!images.length) continue;\n    var img = images[0];\n    var desc = img.getDescription ? (img.getDescription() || '') : '';\n    var key = idFromDescription(desc) || legacyId(img);\n    if (key && map.byId[key] === undefined) map.byId[key] = s;\n    var title = img.getTitle();\n    if (title && map.byName[title] === undefined) map.byName[title] = s;\n    // What the last sync left here: where it put the image and what it called\n    // it. A sync that computes the same two things has nothing to write, which\n    // is six API calls saved on a frame that has not moved or been renamed.\n    // The description's second line is `<geom>|<hash>`; with the title it is\n    // the whole signature of what the last sync put here.\n    var stamped = geomFromDescription(desc);\n    if (stamped) map.sig[s] = stamped + '|' + (title || '');\n  }\n  return map;\n}\n\nfunction reorder(pres, order, map) {\n  var all = pres.getSlides();\n  var slideFor = {};\n  var known = {};\n\n  // Everything the sync matched is already placed, for free.\n  if (map && map.byId) {\n    for (var key in map.byId) {\n      var pos = map.byId[key];\n      if (all[pos]) { slideFor[key] = all[pos]; known[pos] = 1; }\n    }\n  }\n\n  // Which leaves only what this sync appended to be read — on a full re-sync\n  // of a deck that already has every frame, nothing at all.\n  for (var i = 0; i < all.length; i++) {\n    if (known[i]) continue;\n    var imgs = all[i].getImages();\n    if (!imgs.length) continue;\n    var k = stampedId(imgs[0]);\n    if (k && !slideFor[k]) slideFor[k] = all[i];\n  }\n\n  // The slides this sync touched, in the order Figma read them off the canvas.\n  var seq = [];\n  for (var j = 0; j < order.length; j++) {\n    var sl = slideFor[order[j]];\n    if (sl && seq.indexOf(sl) === -1) seq.push(sl);\n  }\n  if (seq.length < 2) return;\n\n  // The positions they sit in now, low to high.\n  var slots = [];\n  for (var k = 0; k < all.length; k++) {\n    if (seq.indexOf(all[k]) !== -1) slots.push(k);\n  }\n\n  // Only rearrange an unbroken run. Slide.move(index) is documented as \"move\n  // the slide to the specified index\" without saying whether that index is\n  // read before or after the slide is lifted out, and the two readings differ\n  // the moment a slide has to travel forwards. Across an unbroken run every\n  // move is backwards, where both readings agree.\n  //\n  // So a deck that is nothing but synced slides reorders, and so does one with\n  // a hand-made title slide in front of them. A deck with something wedged\n  // between the synced slides keeps the order it has, which is what this did\n  // before ordering existed at all.\n  for (var c = 1; c < slots.length; c++) {\n    if (slots[c] !== slots[c - 1] + 1) return;\n  }\n\n  // Fill the run left to right. Working upwards means the slide wanted next is\n  // always at or below where it needs to go, and a slide already in place\n  // costs nothing.\n  var arr = all.slice();\n  for (var m = 0; m < seq.length; m++) {\n    var cur = arr.indexOf(seq[m]);\n    if (cur === slots[m]) continue;\n    seq[m].move(slots[m]);\n    arr.splice(cur, 1);\n    arr.splice(slots[m], 0, seq[m]);\n  }\n}\n\nfunction json(obj) {\n  return ContentService.createTextOutput(JSON.stringify(obj)).setMimeType(\n    ContentService.MimeType.JSON\n  );\n}\n"</script>
 <script>
 (function(){
   /* ---------- three views, switched by the hash ---------- */
@@ -1078,10 +1022,7 @@ details.q .a ol{padding-left:22px;margin-bottom:0;}
   tally();
 
   /* ---------- copy buttons ---------- */
-  var CODE = '';
-  try { CODE = JSON.parse(document.getElementById('code-gs').textContent); } catch(e) {}
-  var pre = document.getElementById('code-preview');
-  if (pre) pre.textContent = CODE;
+  var pre = null;
   function legacy(text){
     var ta = document.createElement('textarea');
     ta.value = text; ta.setAttribute('readonly','');
@@ -1111,9 +1052,7 @@ details.q .a ol{padding-left:22px;margin-bottom:0;}
     } else fallback();
   }
   document.addEventListener('click', function(ev){
-    var b = ev.target.closest('[data-copy-code]');
-    if (b && CODE) return copy(b, CODE, 'Copied — now paste it');
-    b = ev.target.closest('[data-copy]');
+    var b = ev.target.closest('[data-copy]');
     if (b) copy(b, b.getAttribute('data-copy'), 'Copied');
   });
 })();
